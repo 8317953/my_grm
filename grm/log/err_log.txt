@@ -1,0 +1,16 @@
+ERROR 12:57:38 uia.comm.SocketClient                              tryConnect           243   - MyScreen> connect to 192.168.10.29:5005 failure. null
+ERROR 12:57:38 uia.comm.SocketClient                              tryConnect           250   - java.net.SocketTimeoutException
+ERROR 12:57:39 onbon.bx06.file.BxFileWriter                       writePrograms        394   - 1607057859704> Ping failed
+onbon.bx06.Bx6GCommException: Ping failed, connection broken - 断线
+	at onbon.bx06.file.BxFileWriter.writePrograms(BxFileWriter.java:393)
+	at onbon.bx06.Bx6GScreen.writeProgram(Bx6GScreen.java:602)
+	at ceshi.Led6E.SendDynamicProgram(Led6E.java:277)
+	at ceshi.Led6E.main(Led6E.java:40)
+ERROR 13:05:59 uia.comm.SocketClient                              tryConnect           243   - MyScreen> connect to 192.168.20.26:5005 failure. null
+ERROR 13:05:59 uia.comm.SocketClient                              tryConnect           250   - java.net.SocketTimeoutException
+ERROR 13:05:59 onbon.bx06.file.BxFileWriter                       writePrograms        394   - 1607058359894> Ping failed
+onbon.bx06.Bx6GCommException: Ping failed, connection broken - 断线
+	at onbon.bx06.file.BxFileWriter.writePrograms(BxFileWriter.java:393)
+	at onbon.bx06.Bx6GScreen.writeProgram(Bx6GScreen.java:602)
+	at ceshi.Led6E.SendDynamicProgram(Led6E.java:277)
+	at ceshi.Led6E.main(Led6E.java:40)

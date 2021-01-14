@@ -1,0 +1,5 @@
+ERROR 16:49:13 uia.comm.SocketClient                              tryConnect           243   - MyScreen> connect to 192.168.100.199:5005 failure. null
+ERROR 16:49:13 uia.comm.SocketClient                              tryConnect           250   - java.net.SocketTimeoutException
+ERROR 16:49:13 onbon.bx05.file.BxFileWriter                       writePrograms        262   - 1603788553782> Ping failed
+ERROR 17:22:17 uia.comm.SocketClient                              tryConnect           243   - MyScreen> connect to 192.168.5.7:5005 failure. null
+ERROR 17:22:17 uia.comm.SocketClient                              tryConnect           250   - java.net.SocketTimeoutException

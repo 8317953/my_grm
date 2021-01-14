@@ -1,0 +1,33 @@
+package com.haut.grm.model.meta;
+
+import com.haut.grm.model.system.SystemModule;
+import java.util.Set;
+import org.springframework.data.rest.core.config.Projection;
+
+@Projection(name="tree", types={Menu.class})
+public abstract interface MenuTree
+{
+  public abstract Integer getCodeId();
+  
+  public abstract Integer getPosition();
+  
+  public abstract String getName();
+  
+  public abstract String getUrl();
+  
+  public abstract String getIcon();
+  
+  public abstract Integer getLevel();
+  
+  public abstract Boolean getIsObsolete();
+  
+  public abstract Set<Menu> getSubMenus();
+  
+  public abstract SystemModule getModule();
+}
+
+
+/* Location:              C:\Users\10231\Desktop\shundedapingtai\grm\WEB-INF\classes\!\com\haut\grm\model\meta\MenuTree.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       0.7.1
+ */

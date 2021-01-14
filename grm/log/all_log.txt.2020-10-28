@@ -1,0 +1,997 @@
+INFO  08:48:12 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 08:48:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-66-30-00-90-96-76-00-00-00-00-00-00-05-00-1e-78-c1-01-a2-00-00-00-5a-5a
+DEBUG 08:48:12 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 08:48:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-66-b0-00-02-96-d6-8a-8a-8a-8a-8a-8a-28-00-1a-9e-ea-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-01-00-02-80-00-20-00-01-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.016 secs, result: 正確
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:1
+DEBUG 08:48:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-92-30-00-90-96-76-00-00-00-00-00-00-05-00-1e-78-35-01-a2-00-00-00-5a-5a
+DEBUG 08:48:12 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+DEBUG 08:48:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-92-b0-00-02-96-f7-8a-8a-8a-8a-8a-8a-28-00-1a-9e-3f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-01-00-02-80-00-20-00-01-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:48:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:1
+DEBUG 08:48:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-01-00-00-80-05-00-54-03-01-00-9c-30-00-90-96-76-00-00-00-00-00-00-13-00-83-fe-60-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-3a-11-00-00-5a-5a
+DEBUG 08:48:12 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-01-00 callout reply
+INFO  08:48:12 onbon.bx05.file.BxFileWriter                            - 1603846092434> C000> StartWriteFile, 0.049 secs
+DEBUG 08:48:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-01-00-05-00-54-03-01-00-9c-b0-00-02-96-31-8a-8a-8a-8a-8a-8a-09-00-0b-9a-c3-00-a0-00-02-00-00-00-00-00-5a
+DEBUG 08:48:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-01-00-00-80-05-00-54-03-01-00-ce-30-00-90-96-76-00-00-00-00-00-00-34-00-8b-dc-3f-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-37-37-36-0b-02-02-80-00-20-00-03-00-00-00-00-03-0c-00-00-0a-00-00-00-00-00-00-00-00-00-00-3a-11-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-01-00 callout reply
+INFO  08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846092434> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.786 secs
+INFO  08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846092434> C000> StartWriteFile success
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-01-00-05-00-54-03-01-00-ce-b0-00-02-96-f9-8a-8a-8a-8a-8a-8a-09-00-0a-78-ba-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-e2-33-00-90-96-76-00-00-00-00-00-00-05-00-1e-78-46-01-a2-00-00-00-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.029 secs, result: 正確
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-e2-b3-00-02-96-0b-8a-8a-8a-8a-8a-8a-28-00-fc-cf-07-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-90-35-00-90-96-76-00-00-00-00-00-00-05-00-1e-78-32-01-a2-00-00-00-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-90-b5-00-02-96-f0-8a-8a-8a-8a-8a-8a-28-00-fc-cf-88-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.011 secs, result: 正確
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-9c-35-00-90-96-76-00-00-00-00-00-00-05-00-9f-fe-67-01-a1-08-00-00-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-9c-b5-00-02-96-bc-8a-8a-8a-8a-8a-8a-09-00-0a-78-a0-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846093711> StartFileTranfs
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a2-35-00-90-96-76-00-00-00-00-00-00-07-00-40-0a-70-01-a1-06-02-00-00-05-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a2-b5-00-02-96-99-8a-8a-8a-8a-8a-8a-0b-00-9d-40-16-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.006 secs, result: 正確
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-aa-35-00-90-96-76-00-00-00-00-00-00-07-00-bd-c9-46-01-a1-07-02-00-00-00-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-aa-b5-00-02-96-03-8a-8a-8a-8a-8a-8a-0e-00-1d-55-14-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846093711> totalSize: 1084
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-b8-35-00-90-96-76-00-00-00-00-00-00-05-00-be-39-a6-02-01-a1-12-00-00-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-b8-b5-00-02-96-bf-8a-8a-8a-8a-8a-8a-11-00-5d-cc-7c-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  08:48:13 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846093711> MEM available:3891200, delete:0, write:1084
+DEBUG 08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846093711> WriteFile bufferSize: 14336
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-be-35-00-90-96-76-00-00-00-00-00-00-13-00-cf-d1-2c-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-02-2c-b5-0e-5a-5a
+DEBUG 08:48:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:48:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-be-b5-00-02-96-51-8a-8a-8a-8a-8a-8a-09-00-0b-9a-8c-00-a0-00-02-00-00-00-00-00-5a
+INFO  08:48:13 onbon.bx05.file.BxFileWriter                            - 1603846093711> P000> StartWriteFile, 0.003 secs
+DEBUG 08:48:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c2-35-00-90-96-76-00-00-00-00-00-00-4a-04-3d-d3-fd-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-02-00-0a-ee-02-01-80 ... total:1135
+DEBUG 08:48:14 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:48:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c2-b5-00-02-96-1e-8a-8a-8a-8a-8a-8a-09-00-0a-78-5c-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:48:14 onbon.bx05.file.BxFileWriter                            - 1603846093711> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.597 secs
+INFO  08:48:14 onbon.bx05.file.BxFileWriter                            - 1603846093711> P000> StartWriteFile success
+DEBUG 08:48:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-18-38-00-90-96-76-00-00-00-00-00-00-05-00-ce-3e-7f-01-a1-09-00-00-5a-5a
+DEBUG 08:48:14 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:48:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-18-b8-00-02-96-85-8a-8a-8a-8a-8a-8a-09-00-0a-78-10-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:48:14 onbon.bx05.file.BxFileWriter                            - 1603846093711> EndFileTransf
+INFO  08:48:14 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  08:56:52 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 08:56:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-ae-50-00-90-96-5d-00-00-00-00-00-00-05-00-1e-78-42-01-a2-00-00-00-5a-5a
+DEBUG 08:56:52 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 08:56:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-ae-d0-00-02-96-d9-8a-8a-8a-8a-8a-8a-28-00-1a-9e-4d-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-01-00-02-80-00-20-00-01-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:1
+DEBUG 08:56:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-d0-50-00-90-96-5d-00-00-00-00-00-00-05-00-1e-78-3c-01-a2-00-00-00-5a-5a
+DEBUG 08:56:52 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.008 secs, result: 正確
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+DEBUG 08:56:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-d0-d0-00-02-96-6d-8a-8a-8a-8a-8a-8a-28-00-1a-9e-87-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-01-00-02-80-00-20-00-01-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:56:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:1
+DEBUG 08:56:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-01-00-00-80-05-00-54-03-01-00-dc-50-00-90-96-5d-00-00-00-00-00-00-13-00-7c-bc-d6-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-f6-4d-00-00-5a-5a
+DEBUG 08:56:52 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-01-00 callout reply
+DEBUG 08:56:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-01-00-05-00-54-03-01-00-dc-d0-00-02-96-cd-8a-8a-8a-8a-8a-8a-09-00-0b-9a-1f-00-a0-00-02-00-00-00-00-00-5a
+INFO  08:56:52 onbon.bx05.file.BxFileWriter                            - 1603846612687> C000> StartWriteFile, 0.047 secs
+DEBUG 08:56:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-01-00-00-80-05-00-54-03-01-00-0a-51-00-90-96-5d-00-00-00-00-00-00-34-00-8b-dc-b1-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-37-37-36-0b-02-02-00-01-40-00-03-00-00-00-00-03-0c-00-00-0a-00-00-00-00-00-00-00-00-00-00-f6-4d-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-01-00 callout reply
+INFO  08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846612687> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.785 secs
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-01-00-05-00-54-03-01-00-0a-d1-00-02-96-71-8a-8a-8a-8a-8a-8a-09-00-0a-78-97-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846612687> C000> StartWriteFile success
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-1c-54-00-90-96-5d-00-00-00-00-00-00-05-00-1e-78-f4-01-a2-00-00-00-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-1c-d4-00-02-96-ca-8a-8a-8a-8a-8a-8a-28-00-3c-9f-cf-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-00-01-40-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.033 secs, result: 正確
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:256, height:64, colorCode:3
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-ee-54-00-90-96-5d-00-00-00-00-00-00-05-00-1e-78-06-01-a2-00-00-00-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-ee-d4-00-02-96-e7-8a-8a-8a-8a-8a-8a-28-00-3c-9f-10-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-00-01-40-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.004 secs, result: 正確
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:256, height:64, colorCode:3
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-f4-54-00-90-96-5d-00-00-00-00-00-00-05-00-9f-fe-45-01-a1-08-00-00-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-f4-d4-00-02-96-14-8a-8a-8a-8a-8a-8a-09-00-0a-78-01-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846613741> StartFileTranfs
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-fa-54-00-90-96-5d-00-00-00-00-00-00-07-00-40-0a-62-01-a1-06-02-00-00-05-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-fa-d4-00-02-96-70-8a-8a-8a-8a-8a-8a-0b-00-9d-40-c6-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.005 secs, result: 正確
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-00-55-00-90-96-5d-00-00-00-00-00-00-07-00-bd-c9-a7-01-a1-07-02-00-00-00-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-00-d5-00-02-96-df-8a-8a-8a-8a-8a-8a-0e-00-1d-55-02-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846613741> totalSize: 1084
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-0e-55-00-90-96-5d-00-00-00-00-00-00-05-00-be-39-58-01-a1-12-00-00-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-0e-d5-00-02-96-c8-8a-8a-8a-8a-8a-8a-11-00-5d-cc-dd-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  08:56:53 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.005 secs, result: 正確
+DEBUG 08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846613741> MEM available:3891200, delete:0, write:1084
+DEBUG 08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846613741> WriteFile bufferSize: 14336
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-12-55-00-90-96-5d-00-00-00-00-00-00-13-00-cf-d1-cb-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-02-2c-b5-0e-5a-5a
+DEBUG 08:56:53 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:56:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-12-d5-00-02-96-0e-8a-8a-8a-8a-8a-8a-09-00-0b-9a-1f-00-a0-00-02-00-00-00-00-00-5a
+INFO  08:56:53 onbon.bx05.file.BxFileWriter                            - 1603846613741> P000> StartWriteFile, 0.005 secs
+DEBUG 08:56:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-18-55-00-90-96-5d-00-00-00-00-00-00-4a-04-3d-d3-6c-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-02-00-0a-ee-02-01-80 ... total:1135
+DEBUG 08:56:54 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:56:54 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-18-d5-00-02-96-c5-8a-8a-8a-8a-8a-8a-09-00-0a-78-3d-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:56:54 onbon.bx05.file.BxFileWriter                            - 1603846613741> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.618 secs
+INFO  08:56:54 onbon.bx05.file.BxFileWriter                            - 1603846613741> P000> StartWriteFile success
+DEBUG 08:56:54 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-82-57-00-90-96-5d-00-00-00-00-00-00-05-00-ce-3e-a1-01-a1-09-00-00-5a-5a
+DEBUG 08:56:54 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 08:56:54 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-82-d7-00-02-96-5b-01-8a-8a-8a-8a-8a-8a-09-00-0a-78-3b-00-a0-00-00-00-00-00-00-00-5a
+INFO  08:56:54 onbon.bx05.file.BxFileWriter                            - 1603846613741> EndFileTransf
+INFO  08:56:54 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:20:14 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:20:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-3c-38-00-90-96-50-00-00-00-00-00-00-05-00-1e-78-b5-01-a2-00-00-00-5a-5a
+DEBUG 09:20:14 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:20:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-3c-b8-00-02-96-c0-8a-8a-8a-8a-8a-8a-28-00-fc-cf-19-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.017 secs, result: 正確
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:20:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-68-38-00-90-96-50-00-00-00-00-00-00-09-00-1a-ff-30-01-a1-0d-04-00-43-30-30-30-5a-5a
+DEBUG 09:20:14 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8d tx:00-80-0b-02 callout reply
+DEBUG 09:20:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-68-b8-00-02-96-95-8a-8a-8a-8a-8a-8a-15-00-ea-58-ac-00-a1-8d-02-00-00-00-0c-00-43-30-30-30-26-00-00-00-d1-c3-00-00-5a
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadFileCmd, 0.011 secs, result: 正確
+DEBUG 09:20:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-74-38-00-90-96-50-00-00-00-00-00-00-0d-00-f8-53-66-01-a1-0e-08-00-43-30-30-30-00-00-00-00-5a-5a
+DEBUG 09:20:14 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8e tx:00-80-0b-02 callout reply
+INFO  09:20:14 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadFileBlockCmd, 0.008 secs, result: 正確
+DEBUG 09:20:14 onbon.bx05.file.BxFileReader                            - C000> offset:38(38), lastBlock:true
+DEBUG 09:20:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-74-b8-00-02-96-d9-8a-8a-8a-8a-8a-8a-38-00-1d-ca-b4-00-a1-8e-00-00-00-00-2f-00-01-43-30-30-30-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a
+INFO  09:27:46 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:27:46 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-e8-46-00-90-96-2e-00-00-00-00-00-00-05-00-1e-78-61-01-a2-00-00-00-5a-5a
+DEBUG 09:27:46 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:27:46 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-e8-c6-00-02-96-3b-8a-8a-8a-8a-8a-8a-28-00-fc-cf-48-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.013 secs, result: 正確
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:27:46 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-08-47-00-90-96-2e-00-00-00-00-00-00-09-00-1a-ff-51-01-a1-0d-04-00-43-30-30-30-5a-5a
+DEBUG 09:27:46 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8d tx:00-80-0b-02 callout reply
+DEBUG 09:27:46 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-08-c7-00-02-96-1a-8a-8a-8a-8a-8a-8a-15-00-ea-58-3c-00-a1-8d-02-00-00-00-0c-00-43-30-30-30-26-00-00-00-d1-c3-00-00-5a
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadFileCmd, 0.006 secs, result: 正確
+DEBUG 09:27:46 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-10-47-00-90-96-2e-00-00-00-00-00-00-0d-00-f8-53-03-01-a1-0e-08-00-43-30-30-30-00-00-00-00-5a-5a
+DEBUG 09:27:46 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8e tx:00-80-0b-02 callout reply
+INFO  09:27:46 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadFileBlockCmd, 0.008 secs, result: 正確
+DEBUG 09:27:46 onbon.bx05.file.BxFileReader                            - C000> offset:38(38), lastBlock:true
+DEBUG 09:27:46 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-10-c7-00-02-96-4a-8a-8a-8a-8a-8a-8a-38-00-1d-ca-3c-00-a1-8e-00-00-00-00-2f-00-01-43-30-30-30-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a
+INFO  09:44:52 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:44:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-30-50-00-90-96-06-00-00-00-00-00-00-05-00-1e-78-87-01-a2-00-00-00-5a-5a
+DEBUG 09:44:52 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:44:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-30-d0-00-02-96-ef-8a-8a-8a-8a-8a-8a-28-00-fc-cf-52-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:44:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-60-50-00-90-96-06-00-00-00-00-00-00-05-00-1e-78-d7-01-a2-00-00-00-5a-5a
+DEBUG 09:44:52 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+DEBUG 09:44:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-60-d0-00-02-96-9d-8a-8a-8a-8a-8a-8a-28-00-fc-cf-70-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:44:52 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:44:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-68-50-00-90-96-06-00-00-00-00-00-00-13-00-16-23-c4-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:44:52 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:44:52 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-68-d0-00-02-96-c4-8a-8a-8a-8a-8a-8a-09-00-0b-9a-aa-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:44:52 onbon.bx05.file.BxFileWriter                            - 1603849492575> C000> StartWriteFile, 0.047 secs
+DEBUG 09:44:52 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-98-50-00-90-96-06-00-00-00-00-00-00-34-00-8b-dc-71-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:44:53 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:44:53 onbon.bx05.file.BxFileWriter                            - 1603849492575> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.806 secs
+INFO  09:44:53 onbon.bx05.file.BxFileWriter                            - 1603849492575> C000> StartWriteFile success
+DEBUG 09:44:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-98-d0-00-02-96-23-8a-8a-8a-8a-8a-8a-09-00-0a-78-5e-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 09:44:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-be-53-00-90-96-06-00-00-00-00-00-00-05-00-1e-78-0a-01-a2-00-00-00-5a-5a
+DEBUG 09:44:53 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.036 secs, result: 正確
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:44:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-be-d3-00-02-96-6d-8a-8a-8a-8a-8a-8a-28-00-fc-cf-5d-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+DEBUG 09:44:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-e8-53-00-90-96-06-00-00-00-00-00-00-09-00-1a-ff-8d-01-a1-0d-04-00-43-30-30-30-5a-5a
+DEBUG 09:44:53 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8d tx:00-80-0b-02 callout reply
+DEBUG 09:44:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-e8-d3-00-02-96-ff-8a-8a-8a-8a-8a-8a-15-00-ea-58-2d-00-a1-8d-02-00-00-00-0c-00-43-30-30-30-26-00-00-00-d1-c3-00-00-5a
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadFileCmd, 0.005 secs, result: 正確
+DEBUG 09:44:53 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-ec-53-00-90-96-06-00-00-00-00-00-00-0d-00-f8-53-c3-01-a1-0e-08-00-43-30-30-30-00-00-00-00-5a-5a
+DEBUG 09:44:53 uia.comm.SocketClient                                   - MyScreen> cmd:a1-8e tx:00-80-0b-02 callout reply
+DEBUG 09:44:53 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-ec-d3-00-02-96-b4-8a-8a-8a-8a-8a-8a-38-00-1d-ca-2a-00-a1-8e-00-00-00-00-2f-00-01-43-30-30-30-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a
+INFO  09:44:53 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadFileBlockCmd, 0.005 secs, result: 正確
+DEBUG 09:44:53 onbon.bx05.file.BxFileReader                            - C000> offset:38(38), lastBlock:true
+INFO  09:47:42 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:47:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-02-76-00-90-96-48-00-00-00-00-00-00-05-00-1e-78-dd-01-a2-00-00-00-5a-5a
+DEBUG 09:47:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:47:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-02-f6-00-02-96-b7-8a-8a-8a-8a-8a-8a-28-00-fc-cf-1e-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:47:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-28-76-00-90-96-48-00-00-00-00-00-00-05-00-1e-78-f7-01-a2-00-00-00-5a-5a
+DEBUG 09:47:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+DEBUG 09:47:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-28-f6-00-02-96-60-8a-8a-8a-8a-8a-8a-28-00-fc-cf-e3-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:47:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:47:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-30-76-00-90-96-48-00-00-00-00-00-00-13-00-16-23-f4-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:47:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:47:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-30-f6-00-02-96-05-8a-8a-8a-8a-8a-8a-09-00-0b-9a-15-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:47:42 onbon.bx05.file.BxFileWriter                            - 1603849662247> C000> StartWriteFile, 0.05 secs
+DEBUG 09:47:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-64-76-00-90-96-48-00-00-00-00-00-00-34-00-8b-dc-e5-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849662247> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.798 secs
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-64-f6-00-02-96-f1-8a-8a-8a-8a-8a-8a-09-00-0a-78-56-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849662247> C000> StartWriteFile success
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-82-79-00-90-96-48-00-00-00-00-00-00-05-00-1e-78-52-01-a2-00-00-00-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-82-f9-00-02-96-03-8a-8a-8a-8a-8a-8a-28-00-fc-cf-25-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.034 secs, result: 正確
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-20-7b-00-90-96-48-00-00-00-00-00-00-05-00-1e-78-f2-01-a2-00-00-00-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-20-fb-00-02-96-cf-8a-8a-8a-8a-8a-8a-28-00-fc-cf-49-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.004 secs, result: 正確
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-26-7b-00-90-96-48-00-00-00-00-00-00-05-00-9f-fe-ad-01-a1-08-00-00-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-26-fb-00-02-96-92-8a-8a-8a-8a-8a-8a-09-00-0a-78-7a-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849663520> StartFileTranfs
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-30-7b-00-90-96-48-00-00-00-00-00-00-07-00-40-0a-92-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-30-fb-00-02-96-02-8a-8a-8a-8a-8a-8a-0b-00-9d-40-51-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.006 secs, result: 正確
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-36-7b-00-90-96-48-00-00-00-00-00-00-07-00-bd-c9-aa-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-36-fb-00-02-96-72-8a-8a-8a-8a-8a-8a-0e-00-1d-55-b7-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849663520> totalSize: 1084
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-48-7b-00-90-96-48-00-00-00-00-00-00-05-00-be-39-25-01-a1-12-00-00-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-48-fb-00-02-96-46-8a-8a-8a-8a-8a-8a-11-00-5d-cc-3b-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:47:43 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849663520> MEM available:3891200, delete:0, write:1084
+DEBUG 09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849663520> WriteFile bufferSize: 14336
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-4c-7b-00-90-96-48-00-00-00-00-00-00-13-00-cf-d1-ae-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-02-2c-b5-0e-5a-5a
+DEBUG 09:47:43 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:47:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-4c-fb-00-02-96-6a-8a-8a-8a-8a-8a-8a-09-00-0b-9a-0b-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:47:43 onbon.bx05.file.BxFileWriter                            - 1603849663520> P000> StartWriteFile, 0.004 secs
+DEBUG 09:47:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-50-7b-00-90-96-48-00-00-00-00-00-00-4a-04-3d-d3-1f-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-02-00-0a-ee-02-01-80 ... total:1135
+DEBUG 09:47:44 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:47:44 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-50-fb-00-02-96-5f-8a-8a-8a-8a-8a-8a-09-00-0a-78-c1-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:47:44 onbon.bx05.file.BxFileWriter                            - 1603849663520> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.607 secs
+INFO  09:47:44 onbon.bx05.file.BxFileWriter                            - 1603849663520> P000> StartWriteFile success
+DEBUG 09:47:44 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-b0-00-00-90-96-48-00-00-00-00-00-00-05-00-ce-3e-d1-01-a1-09-00-00-5a-5a
+DEBUG 09:47:44 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:47:44 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-b0-80-00-02-96-13-8a-8a-8a-8a-8a-8a-09-00-0a-78-16-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:47:44 onbon.bx05.file.BxFileWriter                            - 1603849663520> EndFileTransf
+INFO  09:47:44 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:48:10 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:48:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-ec-65-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-2d-01-a2-00-00-00-5a-5a
+DEBUG 09:48:10 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:48:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-ec-e5-00-02-96-40-8a-8a-8a-8a-8a-8a-28-00-fc-cf-14-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.014 secs, result: 正確
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:48:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-10-66-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-d2-01-a2-00-00-00-5a-5a
+DEBUG 09:48:10 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+DEBUG 09:48:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-10-e6-00-02-96-17-8a-8a-8a-8a-8a-8a-28-00-fc-cf-bc-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:48:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:48:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-18-66-00-90-96-45-00-00-00-00-00-00-13-00-16-23-c1-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:48:10 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:48:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-18-e6-00-02-96-db-8a-8a-8a-8a-8a-8a-09-00-0b-9a-f3-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:48:10 onbon.bx05.file.BxFileWriter                            - 1603849690128> C000> StartWriteFile, 0.047 secs
+DEBUG 09:48:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-48-66-00-90-96-45-00-00-00-00-00-00-34-00-8b-dc-d4-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:48:10 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:48:10 onbon.bx05.file.BxFileWriter                            - 1603849690128> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.807 secs
+INFO  09:48:10 onbon.bx05.file.BxFileWriter                            - 1603849690128> C000> StartWriteFile success
+DEBUG 09:48:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-48-e6-00-02-96-b6-8a-8a-8a-8a-8a-8a-09-00-0a-78-2d-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 09:48:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-72-69-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-bf-01-a2-00-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.029 secs, result: 正確
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-72-e9-00-02-96-5b-02-8a-8a-8a-8a-8a-8a-28-00-fc-cf-9c-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-4a-6a-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-84-01-a2-00-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-4a-ea-00-02-96-13-8a-8a-8a-8a-8a-8a-28-00-fc-cf-ee-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.021 secs, result: 正確
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-60-6a-00-90-96-45-00-00-00-00-00-00-05-00-9f-fe-f7-01-a1-08-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-60-ea-00-02-96-84-8a-8a-8a-8a-8a-8a-09-00-0a-78-3b-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> StartFileTranfs
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-6c-6a-00-90-96-45-00-00-00-00-00-00-07-00-40-0a-d2-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-6c-ea-00-02-96-5e-8a-8a-8a-8a-8a-8a-0b-00-9d-40-40-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.004 secs, result: 正確
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-70-6a-00-90-96-45-00-00-00-00-00-00-07-00-bd-c9-f0-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-70-ea-00-02-96-dd-8a-8a-8a-8a-8a-8a-0e-00-1d-55-4f-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.004 secs, result: 正確
+DEBUG 09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> totalSize: 1084
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-7c-6a-00-90-96-45-00-00-00-00-00-00-05-00-be-39-0d-01-a1-12-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-7c-ea-00-02-96-31-8a-8a-8a-8a-8a-8a-11-00-5d-cc-69-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:48:11 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> MEM available:3891200, delete:0, write:1084
+DEBUG 09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> WriteFile bufferSize: 14336
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-82-6a-00-90-96-45-00-00-00-00-00-00-13-00-cf-d1-7c-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-02-2c-b5-0e-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-82-ea-00-02-96-ff-8a-8a-8a-8a-8a-8a-09-00-0b-9a-41-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> P000> StartWriteFile, 0.003 secs
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-84-6a-00-90-96-45-00-00-00-00-00-00-4a-04-3d-d3-d7-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-02-00-0a-ee-02-01-80 ... total:1135
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-84-ea-00-02-96-08-8a-8a-8a-8a-8a-8a-09-00-0a-78-53-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.632 secs
+INFO  09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> P000> StartWriteFile success
+DEBUG 09:48:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-fe-6c-00-90-96-45-00-00-00-00-00-00-05-00-ce-3e-fe-01-a1-09-00-00-5a-5a
+DEBUG 09:48:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:48:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-fe-ec-00-02-96-f8-8a-8a-8a-8a-8a-8a-09-00-0a-78-df-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:48:11 onbon.bx05.file.BxFileWriter                            - 1603849691208> EndFileTransf
+INFO  09:48:11 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:49:15 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:49:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-6a-6b-00-90-96-1c-00-00-00-00-00-00-05-00-1e-78-fc-01-a2-00-00-00-5a-5a
+DEBUG 09:49:15 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-6a-eb-00-02-96-d3-8a-8a-8a-8a-8a-8a-28-00-fc-cf-0f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.014 secs, result: 正確
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-96-6b-00-90-96-1c-00-00-00-00-00-00-05-00-1e-78-00-01-a2-00-00-00-5a-5a
+DEBUG 09:49:15 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-96-eb-00-02-96-c0-8a-8a-8a-8a-8a-8a-28-00-fc-cf-e0-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.007 secs, result: 正確
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a0-6b-00-90-96-1c-00-00-00-00-00-00-13-00-16-23-2d-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:49:15 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a0-eb-00-02-96-12-8a-8a-8a-8a-8a-8a-09-00-0b-9a-8f-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:49:15 onbon.bx05.file.BxFileWriter                            - 1603849755540> C000> StartWriteFile, 0.048 secs
+DEBUG 09:49:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-d0-6b-00-90-96-1c-00-00-00-00-00-00-34-00-8b-dc-18-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849755540> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.811 secs
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-d0-eb-00-02-96-0c-8a-8a-8a-8a-8a-8a-09-00-0a-78-02-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849755540> C000> StartWriteFile success
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-fc-6e-00-90-96-1c-00-00-00-00-00-00-05-00-1e-78-6f-01-a2-00-00-00-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.033 secs, result: 正確
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-fc-ee-00-02-96-da-8a-8a-8a-8a-8a-8a-28-00-fc-cf-95-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-d8-6f-00-90-96-1c-00-00-00-00-00-00-05-00-1e-78-4a-01-a2-00-00-00-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-d8-ef-00-02-96-30-8a-8a-8a-8a-8a-8a-28-00-fc-cf-5b-02-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.018 secs, result: 正確
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-ec-6f-00-90-96-1c-00-00-00-00-00-00-05-00-9f-fe-27-01-a1-08-00-00-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-ec-ef-00-02-96-48-8a-8a-8a-8a-8a-8a-09-00-0a-78-7e-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849756631> StartFileTranfs
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-fa-6f-00-90-96-1c-00-00-00-00-00-00-07-00-40-0a-18-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-fa-ef-00-02-96-42-8a-8a-8a-8a-8a-8a-0b-00-9d-40-cf-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.017 secs, result: 正確
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-0c-70-00-90-96-1c-00-00-00-00-00-00-07-00-bd-c9-cf-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-0c-f0-00-02-96-e7-8a-8a-8a-8a-8a-8a-0e-00-1d-55-13-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.01 secs, result: 正確
+DEBUG 09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849756631> totalSize: 589
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-20-70-00-90-96-1c-00-00-00-00-00-00-05-00-be-39-12-01-a1-12-00-00-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-20-f0-00-02-96-a0-8a-8a-8a-8a-8a-8a-11-00-5d-cc-be-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:49:16 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849756631> MEM available:3891200, delete:0, write:589
+DEBUG 09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849756631> WriteFile bufferSize: 14336
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-24-70-00-90-96-1c-00-00-00-00-00-00-13-00-38-03-bc-01-a1-02-0e-00-50-30-30-30-00-4d-02-00-00-01-9c-d1-34-77-5a-5a
+DEBUG 09:49:16 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-24-f0-00-02-96-77-8a-8a-8a-8a-8a-8a-09-00-0b-9a-75-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:49:16 onbon.bx05.file.BxFileWriter                            - 1603849756631> P000> StartWriteFile, 0.003 secs
+DEBUG 09:49:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-28-70-00-90-96-1c-00-00-00-00-00-00-5b-01-02-f6-8e-b9-01-a1-03-56-02-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-2e-02-00-00-00-00-00-00-00-40-00-10-00-00-02-00-0d-01-00-00-00-02-00-0a-ee-02-01 ... total:643
+DEBUG 09:49:17 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:17 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-28-f0-00-02-96-3a-8a-8a-8a-8a-8a-8a-09-00-0a-78-d7-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:17 onbon.bx05.file.BxFileWriter                            - 1603849756631> P000> WriteFileBlock. offset:0, size:589, lastFlag:true, 0.62 secs
+INFO  09:49:17 onbon.bx05.file.BxFileWriter                            - 1603849756631> P000> StartWriteFile success
+DEBUG 09:49:17 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-94-72-00-90-96-1c-00-00-00-00-00-00-05-00-ce-3e-d3-01-a1-09-00-00-5a-5a
+DEBUG 09:49:17 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:17 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-94-f2-00-02-96-db-8a-8a-8a-8a-8a-8a-09-00-0a-78-88-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:17 onbon.bx05.file.BxFileWriter                            - 1603849756631> EndFileTransf
+INFO  09:49:17 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:49:41 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:49:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-5e-52-00-90-96-78-00-00-00-00-00-00-05-00-1e-78-95-01-a2-00-00-00-5a-5a
+DEBUG 09:49:41 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-5e-d2-00-02-96-fe-8a-8a-8a-8a-8a-8a-28-00-fc-cf-2f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.013 secs, result: 正確
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-82-52-00-90-96-78-00-00-00-00-00-00-05-00-1e-78-49-01-a2-00-00-00-5a-5a
+DEBUG 09:49:41 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+DEBUG 09:49:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-82-d2-00-02-96-4a-8a-8a-8a-8a-8a-8a-28-00-fc-cf-47-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-92-52-00-90-96-78-00-00-00-00-00-00-13-00-16-23-42-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:49:41 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-92-d2-00-02-96-6a-8a-8a-8a-8a-8a-8a-09-00-0b-9a-fc-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:49:41 onbon.bx05.file.BxFileWriter                            - 1603849781121> C000> StartWriteFile, 0.048 secs
+DEBUG 09:49:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c2-52-00-90-96-78-00-00-00-00-00-00-34-00-8b-dc-57-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:49:41 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c2-d2-00-02-96-d3-8a-8a-8a-8a-8a-8a-09-00-0a-78-f6-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849781121> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.815 secs
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849781121> C000> StartWriteFile success
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-f2-55-00-90-96-78-00-00-00-00-00-00-05-00-1e-78-3e-01-a2-00-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-f2-d5-00-02-96-19-8a-8a-8a-8a-8a-8a-28-00-fc-cf-63-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.033 secs, result: 正確
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-d6-56-00-90-96-78-00-00-00-00-00-00-05-00-1e-78-19-01-a2-00-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-d6-d6-00-02-96-37-8a-8a-8a-8a-8a-8a-28-00-fc-cf-6a-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.005 secs, result: 正確
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-de-56-00-90-96-78-00-00-00-00-00-00-05-00-9f-fe-48-01-a1-08-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-de-d6-00-02-96-18-8a-8a-8a-8a-8a-8a-09-00-0a-78-25-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> StartFileTranfs
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-e4-56-00-90-96-78-00-00-00-00-00-00-07-00-40-0a-5b-01-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-e4-d6-00-02-96-4b-8a-8a-8a-8a-8a-8a-0b-00-9d-40-e1-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.009 secs, result: 正確
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-ec-56-00-90-96-78-00-00-00-00-00-00-07-00-bd-c9-6d-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-ec-d6-00-02-96-49-8a-8a-8a-8a-8a-8a-0e-00-1d-55-7b-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> totalSize: 589
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-fc-56-00-90-96-78-00-00-00-00-00-00-05-00-be-39-8c-01-a1-12-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-fc-d6-00-02-96-f7-8a-8a-8a-8a-8a-8a-11-00-5d-cc-13-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:49:42 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.005 secs, result: 正確
+DEBUG 09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> MEM available:3891200, delete:0, write:589
+DEBUG 09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> WriteFile bufferSize: 14336
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-02-57-00-90-96-78-00-00-00-00-00-00-13-00-38-03-d9-01-a1-02-0e-00-50-30-30-30-00-4d-02-00-00-01-9c-d1-34-77-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-02-d7-00-02-96-95-8a-8a-8a-8a-8a-8a-09-00-0b-9a-96-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> P000> StartWriteFile, 0.004 secs
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-06-57-00-90-96-78-00-00-00-00-00-00-5b-01-02-f6-8e-d4-01-a1-03-56-02-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-2e-02-00-00-00-00-00-00-00-40-00-10-00-00-02-00-0d-01-00-00-00-02-00-0a-ee-02-01 ... total:643
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-06-d7-00-02-96-97-8a-8a-8a-8a-8a-8a-09-00-0a-78-73-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> P000> WriteFileBlock. offset:0, size:589, lastFlag:true, 0.624 secs
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> P000> StartWriteFile success
+DEBUG 09:49:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-76-59-00-90-96-78-00-00-00-00-00-00-05-00-ce-3e-7e-01-a1-09-00-00-5a-5a
+DEBUG 09:49:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:49:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-76-d9-00-02-96-e3-8a-8a-8a-8a-8a-8a-09-00-0a-78-79-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:49:42 onbon.bx05.file.BxFileWriter                            - 1603849782230> EndFileTransf
+INFO  09:49:42 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:51:09 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:51:09 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-28-36-00-90-96-10-00-00-00-00-00-00-05-00-1e-78-ef-01-a2-00-00-00-5a-5a
+DEBUG 09:51:09 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:09 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-28-b6-00-02-96-7f-8a-8a-8a-8a-8a-8a-28-00-fc-cf-bc-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:09 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-4a-36-00-90-96-10-00-00-00-00-00-00-05-00-1e-78-8d-01-a2-00-00-00-5a-5a
+DEBUG 09:51:09 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.004 secs, result: 正確
+DEBUG 09:51:09 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-4a-b6-00-02-96-0b-8a-8a-8a-8a-8a-8a-28-00-fc-cf-aa-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:09 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:09 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-50-36-00-90-96-10-00-00-00-00-00-00-13-00-16-23-8c-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:51:09 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:09 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-50-b6-00-02-96-8e-8a-8a-8a-8a-8a-8a-09-00-0b-9a-be-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:51:09 onbon.bx05.file.BxFileWriter                            - 1603849869896> C000> StartWriteFile, 0.045 secs
+DEBUG 09:51:09 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-7e-36-00-90-96-10-00-00-00-00-00-00-34-00-8b-dc-e7-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:51:10 onbon.bx05.file.BxFileWriter                            - 1603849869896> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.807 secs
+INFO  09:51:10 onbon.bx05.file.BxFileWriter                            - 1603849869896> C000> StartWriteFile success
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-7e-b6-00-02-96-e7-8a-8a-8a-8a-8a-8a-09-00-0a-78-1a-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 09:51:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-a6-01-39-00-90-96-10-00-00-00-00-00-00-05-00-1e-78-6e-01-a2-00-00-00-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-a6-01-b9-00-02-96-a8-8a-8a-8a-8a-8a-8a-28-00-fc-cf-ea-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.034 secs, result: 正確
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-78-3a-00-90-96-10-00-00-00-00-00-00-05-00-1e-78-b3-01-a2-00-00-00-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-78-ba-00-02-96-47-8a-8a-8a-8a-8a-8a-28-00-fc-cf-d8-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.005 secs, result: 正確
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-7e-3a-00-90-96-10-00-00-00-00-00-00-05-00-9f-fe-ec-01-a1-08-00-00-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-7e-ba-00-02-96-d8-8a-8a-8a-8a-8a-8a-09-00-0a-78-29-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:10 onbon.bx05.file.BxFileWriter                            - 1603849870967> StartFileTranfs
+DEBUG 09:51:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-86-3a-00-90-96-10-00-00-00-00-00-00-07-00-40-0a-3d-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-86-ba-00-02-96-a1-8a-8a-8a-8a-8a-8a-0b-00-9d-40-05-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.005 secs, result: 正確
+DEBUG 09:51:10 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-8a-3a-00-90-96-10-00-00-00-00-00-00-07-00-bd-c9-0f-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:51:10 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:51:10 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-8a-ba-00-02-96-46-8a-8a-8a-8a-8a-8a-0e-00-1d-55-7e-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:51:10 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.006 secs, result: 正確
+DEBUG 09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> totalSize: 589
+DEBUG 09:51:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-9a-3a-00-90-96-10-00-00-00-00-00-00-05-00-be-39-ee-01-a1-12-00-00-5a-5a
+DEBUG 09:51:11 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:51:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-9a-ba-00-02-96-cc-8a-8a-8a-8a-8a-8a-11-00-5d-cc-22-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:51:11 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.005 secs, result: 正確
+DEBUG 09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> MEM available:3891200, delete:0, write:589
+DEBUG 09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> WriteFile bufferSize: 14336
+DEBUG 09:51:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a0-3a-00-90-96-10-00-00-00-00-00-00-13-00-38-03-7e-01-a1-02-0e-00-50-30-30-30-00-4d-02-00-00-01-9c-d1-34-77-5a-5a
+DEBUG 09:51:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a0-ba-00-02-96-dd-8a-8a-8a-8a-8a-8a-09-00-0b-9a-11-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> P000> StartWriteFile, 0.004 secs
+DEBUG 09:51:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a4-3a-00-90-96-10-00-00-00-00-00-00-5b-01-02-f6-8e-73-01-a1-03-56-02-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-2e-02-00-00-00-00-00-00-00-40-00-10-00-00-02-00-0d-01-00-00-00-02-00-0a-ee-02-01 ... total:643
+DEBUG 09:51:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a4-ba-00-02-96-70-8a-8a-8a-8a-8a-8a-09-00-0a-78-5b-01-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> P000> WriteFileBlock. offset:0, size:589, lastFlag:true, 0.633 secs
+INFO  09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> P000> StartWriteFile success
+DEBUG 09:51:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-1c-3d-00-90-96-10-00-00-00-00-00-00-05-00-ce-3e-18-01-a1-09-00-00-5a-5a
+DEBUG 09:51:11 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-1c-bd-00-02-96-90-8a-8a-8a-8a-8a-8a-09-00-0a-78-04-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:11 onbon.bx05.file.BxFileWriter                            - 1603849870967> EndFileTransf
+INFO  09:51:11 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  09:51:49 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 09:51:49 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-52-52-00-90-96-03-00-00-00-00-00-00-05-00-1e-78-e2-01-a2-00-00-00-5a-5a
+DEBUG 09:51:49 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:49 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-52-d2-00-02-96-d4-8a-8a-8a-8a-8a-8a-28-00-fc-cf-09-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.013 secs, result: 正確
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:49 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-7c-52-00-90-96-03-00-00-00-00-00-00-05-00-1e-78-cc-01-a2-00-00-00-5a-5a
+DEBUG 09:51:49 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.007 secs, result: 正確
+DEBUG 09:51:49 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-7c-d2-00-02-96-32-8a-8a-8a-8a-8a-8a-28-00-fc-cf-c1-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:49 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:49 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-86-52-00-90-96-03-00-00-00-00-00-00-13-00-16-23-2d-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 09:51:49 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:49 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-86-d2-00-02-96-2c-8a-8a-8a-8a-8a-8a-09-00-0b-9a-ae-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:51:49 onbon.bx05.file.BxFileWriter                            - 1603849909115> C000> StartWriteFile, 0.049 secs
+DEBUG 09:51:49 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-b8-52-00-90-96-03-00-00-00-00-00-00-34-00-8b-dc-56-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 09:51:49 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  09:51:49 onbon.bx05.file.BxFileWriter                            - 1603849909115> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.823 secs
+INFO  09:51:49 onbon.bx05.file.BxFileWriter                            - 1603849909115> C000> StartWriteFile success
+DEBUG 09:51:49 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-b8-d2-00-02-96-77-8a-8a-8a-8a-8a-8a-09-00-0a-78-28-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-f0-55-00-90-96-03-00-00-00-00-00-00-05-00-1e-78-47-01-a2-00-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-f0-d5-00-02-96-2f-8a-8a-8a-8a-8a-8a-28-00-fc-cf-57-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.033 secs, result: 正確
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-bc-56-00-90-96-03-00-00-00-00-00-00-05-00-1e-78-08-01-a2-00-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-bc-d6-00-02-96-26-8a-8a-8a-8a-8a-8a-28-00-fc-cf-11-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.004 secs, result: 正確
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c2-56-00-90-96-03-00-00-00-00-00-00-05-00-9f-fe-2f-01-a1-08-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c2-d6-00-02-96-ff-8a-8a-8a-8a-8a-8a-09-00-0a-78-de-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> StartFileTranfs
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c8-56-00-90-96-03-00-00-00-00-00-00-07-00-40-0a-0c-01-a1-06-02-00-00-05-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c8-d6-00-02-96-51-8a-8a-8a-8a-8a-8a-0b-00-9d-40-d7-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.005 secs, result: 正確
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-ce-56-00-90-96-03-00-00-00-00-00-00-07-00-bd-c9-34-01-a1-07-02-00-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-ce-d6-00-02-96-a8-8a-8a-8a-8a-8a-8a-0e-00-1d-55-b8-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.004 secs, result: 正確
+DEBUG 09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> totalSize: 589
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-da-56-00-90-96-03-00-00-00-00-00-00-05-00-be-39-d1-01-a1-12-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-da-d6-00-02-96-1b-8a-8a-8a-8a-8a-8a-11-00-5d-cc-d9-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  09:51:50 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.005 secs, result: 正確
+DEBUG 09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> MEM available:3891200, delete:0, write:589
+DEBUG 09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> WriteFile bufferSize: 14336
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-de-56-00-90-96-03-00-00-00-00-00-00-13-00-87-29-ea-01-a1-02-0e-00-50-30-30-30-00-4d-02-00-00-01-a2-df-f0-75-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-de-d6-00-02-96-41-8a-8a-8a-8a-8a-8a-09-00-0b-9a-9f-00-a0-00-02-00-00-00-00-00-5a
+INFO  09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> P000> StartWriteFile, 0.005 secs
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-e4-56-00-90-96-03-00-00-00-00-00-00-5b-01-02-80-e0-54-01-a1-03-56-02-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-2e-02-00-00-00-00-00-00-00-40-00-10-00-00-02-00-0d-01-00-00-00-01-00-0a-ee-02-01 ... total:643
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-e4-d6-00-02-96-5c-8a-8a-8a-8a-8a-8a-09-00-0a-78-5b-01-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> P000> WriteFileBlock. offset:0, size:589, lastFlag:true, 0.643 secs
+INFO  09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> P000> StartWriteFile success
+DEBUG 09:51:50 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-66-59-00-90-96-03-00-00-00-00-00-00-05-00-ce-3e-15-01-a1-09-00-00-5a-5a
+DEBUG 09:51:50 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 09:51:50 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-66-d9-00-02-96-3c-8a-8a-8a-8a-8a-8a-09-00-0a-78-b6-00-a0-00-00-00-00-00-00-00-5a
+INFO  09:51:50 onbon.bx05.file.BxFileWriter                            - 1603849910202> EndFileTransf
+INFO  09:51:50 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  11:22:35 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 11:22:35 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-ac-6b-00-90-96-19-00-00-00-00-00-00-05-00-1e-78-3f-01-a2-00-00-00-5a-5a
+DEBUG 11:22:35 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:22:35 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-ac-eb-00-02-96-e6-8a-8a-8a-8a-8a-8a-28-00-f8-33-04-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-00-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.018 secs, result: 正確
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:22:35 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-de-6b-00-90-96-19-00-00-00-00-00-00-05-00-1e-78-4d-01-a2-00-00-00-5a-5a
+DEBUG 11:22:35 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.02 secs, result: 正確
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+DEBUG 11:22:35 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-de-eb-00-02-96-35-8a-8a-8a-8a-8a-8a-28-00-f8-33-a6-02-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-00-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:22:35 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:22:35 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-f6-6b-00-90-96-19-00-00-00-00-00-00-13-00-16-23-7e-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 11:22:35 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:22:35 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-f6-eb-00-02-96-b1-8a-8a-8a-8a-8a-8a-09-00-0b-9a-7a-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:22:35 onbon.bx05.file.BxFileWriter                            - 1603855355613> C000> StartWriteFile, 0.057 secs
+DEBUG 11:22:35 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-30-6c-00-90-96-19-00-00-00-00-00-00-34-00-8b-dc-fa-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855355613> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.819 secs
+INFO  11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855355613> C000> StartWriteFile success
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-30-ec-00-02-96-7b-8a-8a-8a-8a-8a-8a-09-00-0a-78-92-00-a0-00-00-00-00-00-00-00-5a
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-64-6f-00-90-96-19-00-00-00-00-00-00-05-00-1e-78-f3-01-a2-00-00-00-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-64-ef-00-02-96-32-8a-8a-8a-8a-8a-8a-28-00-fc-cf-e4-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.018 secs, result: 正確
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-68-70-00-90-96-19-00-00-00-00-00-00-05-00-1e-78-e0-01-a2-00-00-00-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-68-f0-00-02-96-5d-8a-8a-8a-8a-8a-8a-28-00-fc-cf-98-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.015 secs, result: 正確
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-7a-70-00-90-96-19-00-00-00-00-00-00-05-00-9f-fe-ab-01-a1-08-00-00-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-7a-f0-00-02-96-34-8a-8a-8a-8a-8a-8a-09-00-0a-78-8b-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855356776> StartFileTranfs
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-84-70-00-90-96-19-00-00-00-00-00-00-07-00-40-0a-7c-01-a1-06-02-00-00-05-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-84-f0-00-02-96-f4-8a-8a-8a-8a-8a-8a-0b-00-9d-40-18-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.004 secs, result: 正確
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-88-70-00-90-96-19-00-00-00-00-00-00-07-00-bd-c9-4e-01-a1-07-02-00-00-00-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-88-f0-00-02-96-60-8a-8a-8a-8a-8a-8a-0e-00-1d-55-10-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.008 secs, result: 正確
+DEBUG 11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855356776> totalSize: 589
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-98-70-00-90-96-19-00-00-00-00-00-00-05-00-be-39-af-01-a1-12-00-00-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-98-f0-00-02-96-19-8a-8a-8a-8a-8a-8a-11-00-5d-cc-bf-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  11:22:36 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855356776> MEM available:3891200, delete:0, write:589
+DEBUG 11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855356776> WriteFile bufferSize: 14336
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-9e-70-00-90-96-19-00-00-00-00-00-00-13-00-98-c8-68-01-a1-02-0e-00-50-30-30-30-00-4d-02-00-00-01-8b-16-07-cf-5a-5a
+DEBUG 11:22:36 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:22:36 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-9e-f0-00-02-96-93-8a-8a-8a-8a-8a-8a-09-00-0b-9a-2b-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:22:36 onbon.bx05.file.BxFileWriter                            - 1603855356776> P000> StartWriteFile, 0.008 secs
+DEBUG 11:22:36 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a6-01-70-00-90-96-19-00-00-00-00-00-00-5b-01-02-69-cd-ee-01-a1-03-56-02-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-2e-02-00-00-00-00-00-00-00-40-00-10-00-00-02-00-0d-01-00-00-00-01-00-0a-ee-02 ... total:642
+DEBUG 11:22:37 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:22:37 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a6-01-f0-00-02-96-73-8a-8a-8a-8a-8a-8a-09-00-0a-78-10-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:22:37 onbon.bx05.file.BxFileWriter                            - 1603855356776> P000> WriteFileBlock. offset:0, size:589, lastFlag:true, 0.623 secs
+INFO  11:22:37 onbon.bx05.file.BxFileWriter                            - 1603855356776> P000> StartWriteFile success
+DEBUG 11:22:37 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-14-73-00-90-96-19-00-00-00-00-00-00-05-00-ce-3e-57-01-a1-09-00-00-5a-5a
+DEBUG 11:22:37 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:22:37 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-14-f3-00-02-96-e9-8a-8a-8a-8a-8a-8a-09-00-0a-78-3b-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:22:37 onbon.bx05.file.BxFileWriter                            - 1603855356776> EndFileTransf
+INFO  11:22:37 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  11:24:14 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 11:24:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-a4-76-00-90-96-53-00-00-00-00-00-00-05-00-1e-78-60-01-a2-00-00-00-5a-5a
+DEBUG 11:24:14 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:24:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-a4-f6-00-02-96-7d-8a-8a-8a-8a-8a-8a-28-00-fc-cf-72-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.014 secs, result: 正確
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-c8-76-00-90-96-53-00-00-00-00-00-00-05-00-1e-78-0c-01-a2-00-00-00-5a-5a
+DEBUG 11:24:14 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.007 secs, result: 正確
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:14 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-c8-f6-00-02-96-e7-8a-8a-8a-8a-8a-8a-28-00-fc-cf-84-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+DEBUG 11:24:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-d4-76-00-90-96-53-00-00-00-00-00-00-13-00-16-23-0b-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 11:24:14 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:14 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-d4-f6-00-02-96-94-8a-8a-8a-8a-8a-8a-09-00-0b-9a-60-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:24:14 onbon.bx05.file.BxFileWriter                            - 1603855454407> C000> StartWriteFile, 0.049 secs
+DEBUG 11:24:14 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-06-77-00-90-96-53-00-00-00-00-00-00-34-00-8b-dc-9d-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855454407> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.823 secs
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-06-f7-00-02-96-d9-8a-8a-8a-8a-8a-8a-09-00-0a-78-1d-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855454407> C000> StartWriteFile success
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-40-7a-00-90-96-53-00-00-00-00-00-00-05-00-1e-78-88-01-a2-00-00-00-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-40-fa-00-02-96-8f-8a-8a-8a-8a-8a-8a-28-00-fc-cf-68-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.028 secs, result: 正確
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-1a-7b-00-90-96-53-00-00-00-00-00-00-05-00-1e-78-d3-01-a2-00-00-00-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-1a-fb-00-02-96-ad-8a-8a-8a-8a-8a-8a-28-00-fc-cf-11-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.008 secs, result: 正確
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-24-7b-00-90-96-53-00-00-00-00-00-00-05-00-9f-fe-b4-01-a1-08-00-00-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-24-fb-00-02-96-60-8a-8a-8a-8a-8a-8a-09-00-0a-78-8a-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855455514> StartFileTranfs
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-34-7b-00-90-96-53-00-00-00-00-00-00-07-00-40-0a-8d-01-a1-06-02-00-00-05-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-34-fb-00-02-96-ef-8a-8a-8a-8a-8a-8a-0b-00-9d-40-b8-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.006 secs, result: 正確
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-3a-7b-00-90-96-53-00-00-00-00-00-00-07-00-bd-c9-bd-01-a1-07-02-00-00-00-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-3a-fb-00-02-96-a3-8a-8a-8a-8a-8a-8a-0e-00-1d-55-6a-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855455514> totalSize: 1084
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-46-7b-00-90-96-53-00-00-00-00-00-00-05-00-be-39-30-01-a1-12-00-00-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-46-fb-00-02-96-ad-8a-8a-8a-8a-8a-8a-11-00-5d-cc-de-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  11:24:15 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855455514> MEM available:3891200, delete:0, write:1084
+DEBUG 11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855455514> WriteFile bufferSize: 14336
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-4c-7b-00-90-96-53-00-00-00-00-00-00-13-00-6d-1c-da-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-40-1b-be-ea-5a-5a
+DEBUG 11:24:15 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:15 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-4c-fb-00-02-96-d5-8a-8a-8a-8a-8a-8a-09-00-0b-9a-b4-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:24:15 onbon.bx05.file.BxFileWriter                            - 1603855455514> P000> StartWriteFile, 0.003 secs
+DEBUG 11:24:15 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-50-7b-00-90-96-53-00-00-00-00-00-00-4a-04-d4-48-76-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-01-00-0a-ee-02-01-80 ... total:1135
+DEBUG 11:24:16 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-50-fb-00-02-96-37-8a-8a-8a-8a-8a-8a-09-00-0a-78-a9-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:16 onbon.bx05.file.BxFileWriter                            - 1603855455514> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.622 secs
+INFO  11:24:16 onbon.bx05.file.BxFileWriter                            - 1603855455514> P000> StartWriteFile success
+DEBUG 11:24:16 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-be-00-00-90-96-53-00-00-00-00-00-00-05-00-ce-3e-c4-01-a1-09-00-00-5a-5a
+DEBUG 11:24:16 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:16 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-be-80-00-02-96-dd-8a-8a-8a-8a-8a-8a-09-00-0a-78-d6-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:16 onbon.bx05.file.BxFileWriter                            - 1603855455514> EndFileTransf
+INFO  11:24:16 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  11:24:41 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 11:24:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-38-64-00-90-96-3d-00-00-00-00-00-00-05-00-1e-78-80-01-a2-00-00-00-5a-5a
+DEBUG 11:24:41 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:24:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-38-e4-00-02-96-cc-8a-8a-8a-8a-8a-8a-28-00-fc-cf-4d-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.013 secs, result: 正確
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-5b-02-64-00-90-96-3d-00-00-00-00-00-00-05-00-1e-78-e2-01-a2-00-00-00-5a-5a
+DEBUG 11:24:41 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:41 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-5b-02-e4-00-02-96-bc-8a-8a-8a-8a-8a-8a-28-00-fc-cf-5f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+DEBUG 11:24:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-62-64-00-90-96-3d-00-00-00-00-00-00-13-00-16-23-c1-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 11:24:41 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:41 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-62-e4-00-02-96-8e-8a-8a-8a-8a-8a-8a-09-00-0b-9a-de-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:24:41 onbon.bx05.file.BxFileWriter                            - 1603855481689> C000> StartWriteFile, 0.047 secs
+DEBUG 11:24:41 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-92-64-00-90-96-3d-00-00-00-00-00-00-34-00-8b-dc-74-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855481689> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.835 secs
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-92-e4-00-02-96-99-8a-8a-8a-8a-8a-8a-09-00-0a-78-da-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855481689> C000> StartWriteFile success
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-d6-67-00-90-96-3d-00-00-00-00-00-00-05-00-1e-78-6d-01-a2-00-00-00-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.034 secs, result: 正確
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-d6-e7-00-02-96-c1-8a-8a-8a-8a-8a-8a-28-00-fc-cf-ad-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-ba-68-00-90-96-3d-00-00-00-00-00-00-05-00-1e-78-0e-01-a2-00-00-00-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-ba-e8-00-02-96-e3-8a-8a-8a-8a-8a-8a-28-00-fc-cf-ec-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.004 secs, result: 正確
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c0-68-00-90-96-3d-00-00-00-00-00-00-05-00-9f-fe-2d-01-a1-08-00-00-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c0-e8-00-02-96-02-8a-8a-8a-8a-8a-8a-09-00-0a-78-1f-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855482809> StartFileTranfs
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c6-68-00-90-96-3d-00-00-00-00-00-00-07-00-40-0a-02-01-a1-06-02-00-00-05-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c6-e8-00-02-96-33-8a-8a-8a-8a-8a-8a-0b-00-9d-40-85-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.004 secs, result: 正確
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-cc-68-00-90-96-3d-00-00-00-00-00-00-07-00-bd-c9-36-01-a1-07-02-00-00-00-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-cc-e8-00-02-96-2b-8a-8a-8a-8a-8a-8a-0e-00-1d-55-07-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.013 secs, result: 正確
+DEBUG 11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855482809> totalSize: 1084
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-e0-68-00-90-96-3d-00-00-00-00-00-00-05-00-be-39-eb-01-a1-12-00-00-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-e0-e8-00-02-96-26-8a-8a-8a-8a-8a-8a-11-00-5d-cc-e0-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  11:24:42 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.005 secs, result: 正確
+DEBUG 11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855482809> MEM available:3891200, delete:0, write:1084
+DEBUG 11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855482809> WriteFile bufferSize: 14336
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-e6-68-00-90-96-3d-00-00-00-00-00-00-13-00-78-87-83-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-82-76-e0-3c-5a-5a
+DEBUG 11:24:42 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:42 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-e6-e8-00-02-96-3b-8a-8a-8a-8a-8a-8a-09-00-0b-9a-e3-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:24:42 onbon.bx05.file.BxFileWriter                            - 1603855482809> P000> StartWriteFile, 0.004 secs
+DEBUG 11:24:42 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-ea-68-00-90-96-3d-00-00-00-00-00-00-4a-04-ce-02-e1-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-01-00-0a-ee-02-01-80 ... total:1135
+DEBUG 11:24:43 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-ea-e8-00-02-96-23-8a-8a-8a-8a-8a-8a-09-00-0a-78-14-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:43 onbon.bx05.file.BxFileWriter                            - 1603855482809> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.63 secs
+INFO  11:24:43 onbon.bx05.file.BxFileWriter                            - 1603855482809> P000> StartWriteFile success
+DEBUG 11:24:43 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-60-6b-00-90-96-3d-00-00-00-00-00-00-05-00-ce-3e-1f-01-a1-09-00-00-5a-5a
+DEBUG 11:24:43 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:24:43 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-60-eb-00-02-96-f4-8a-8a-8a-8a-8a-8a-09-00-0a-78-4a-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:24:43 onbon.bx05.file.BxFileWriter                            - 1603855482809> EndFileTransf
+INFO  11:24:43 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  11:25:28 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 11:25:28 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-2e-20-00-90-96-1b-00-00-00-00-00-00-05-00-1e-78-f4-01-a2-00-00-00-5a-5a
+DEBUG 11:25:28 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:25:28 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-2e-a0-00-02-96-4c-8a-8a-8a-8a-8a-8a-28-00-fc-cf-9f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.013 secs, result: 正確
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:25:28 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-50-20-00-90-96-1b-00-00-00-00-00-00-05-00-1e-78-8a-01-a2-00-00-00-5a-5a
+DEBUG 11:25:28 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+DEBUG 11:25:28 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-50-a0-00-02-96-ab-8a-8a-8a-8a-8a-8a-28-00-fc-cf-06-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:25:28 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:25:28 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-5b-02-20-00-90-96-1b-00-00-00-00-00-00-13-00-16-23-9b-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 11:25:28 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:25:28 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-5b-02-a0-00-02-96-4a-8a-8a-8a-8a-8a-8a-09-00-0b-9a-66-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:25:28 onbon.bx05.file.BxFileWriter                            - 1603855528271> C000> StartWriteFile, 0.048 secs
+DEBUG 11:25:28 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-8a-20-00-90-96-1b-00-00-00-00-00-00-34-00-8b-dc-0e-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855528271> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.807 secs
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-8a-a0-00-02-96-7f-8a-8a-8a-8a-8a-8a-09-00-0a-78-60-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855528271> C000> StartWriteFile success
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-b2-23-00-90-96-1b-00-00-00-00-00-00-05-00-1e-78-6b-01-a2-00-00-00-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.033 secs, result: 正確
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-b2-a3-00-02-96-03-8a-8a-8a-8a-8a-8a-28-00-fc-cf-4f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-8e-24-00-90-96-1b-00-00-00-00-00-00-05-00-1e-78-50-01-a2-00-00-00-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-8e-a4-00-02-96-a0-8a-8a-8a-8a-8a-8a-28-00-fc-cf-d7-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-9c-24-00-90-96-1b-00-00-00-00-00-00-05-00-9f-fe-1b-01-a1-08-00-00-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-9c-a4-00-02-96-ad-8a-8a-8a-8a-8a-8a-09-00-0a-78-a0-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855529357> StartFileTranfs
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-aa-24-00-90-96-1b-00-00-00-00-00-00-07-00-40-0a-04-01-a1-06-02-00-00-05-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-aa-a4-00-02-96-d1-8a-8a-8a-8a-8a-8a-0b-00-9d-40-47-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.008 secs, result: 正確
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-b2-24-00-90-96-1b-00-00-00-00-00-00-07-00-bd-c9-22-01-a1-07-02-00-00-00-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-b2-a4-00-02-96-1e-8a-8a-8a-8a-8a-8a-0e-00-1d-55-00-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.004 secs, result: 正確
+DEBUG 11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855529357> totalSize: 1084
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c0-24-00-90-96-1b-00-00-00-00-00-00-05-00-be-39-a1-01-a1-12-00-00-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c0-a4-00-02-96-f2-8a-8a-8a-8a-8a-8a-11-00-5d-cc-58-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  11:25:29 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855529357> MEM available:3891200, delete:0, write:1084
+DEBUG 11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855529357> WriteFile bufferSize: 14336
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c4-24-00-90-96-1b-00-00-00-00-00-00-13-00-cd-f1-08-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-df-c2-94-6d-5a-5a
+DEBUG 11:25:29 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:25:29 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c4-a4-00-02-96-58-8a-8a-8a-8a-8a-8a-09-00-0b-9a-ee-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:25:29 onbon.bx05.file.BxFileWriter                            - 1603855529357> P000> StartWriteFile, 0.004 secs
+DEBUG 11:25:29 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-c8-24-00-90-96-1b-00-00-00-00-00-00-4a-04-bc-25-fc-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-01-00-0a-ee-02-01-80 ... total:1135
+DEBUG 11:25:30 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:25:30 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-c8-a4-00-02-96-02-8a-8a-8a-8a-8a-8a-09-00-0a-78-5b-01-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:25:30 onbon.bx05.file.BxFileWriter                            - 1603855529357> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.628 secs
+INFO  11:25:30 onbon.bx05.file.BxFileWriter                            - 1603855529357> P000> StartWriteFile success
+DEBUG 11:25:30 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-3e-27-00-90-96-1b-00-00-00-00-00-00-05-00-ce-3e-2b-01-a1-09-00-00-5a-5a
+DEBUG 11:25:30 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:25:30 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-3e-a7-00-02-96-34-8a-8a-8a-8a-8a-8a-09-00-0a-78-98-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:25:30 onbon.bx05.file.BxFileWriter                            - 1603855529357> EndFileTransf
+INFO  11:25:30 uia.comm.SocketClient                                   - MyScreen> disconnect
+INFO  11:26:11 uia.comm.SocketClient                                   - MyScreen> connect to 192.168.0.199:5005
+DEBUG 11:26:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-f6-4d-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-1f-01-a2-00-00-00-5a-5a
+DEBUG 11:26:11 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:26:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-f6-cd-00-02-96-02-8a-8a-8a-8a-8a-8a-28-00-fc-cf-64-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.012 secs, result: 正確
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:26:11 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-18-4e-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-f2-01-a2-00-00-00-5a-5a
+DEBUG 11:26:11 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.006 secs, result: 正確
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:26:11 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:26:11 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-18-ce-00-02-96-20-8a-8a-8a-8a-8a-8a-28-00-fc-cf-ab-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+DEBUG 11:26:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-22-4e-00-90-96-45-00-00-00-00-00-00-13-00-16-23-d3-01-a1-0b-0e-00-43-30-30-30-01-26-00-00-00-01-d1-c3-00-00-5a-5a
+DEBUG 11:26:12 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:26:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-22-ce-00-02-96-97-8a-8a-8a-8a-8a-8a-09-00-0b-9a-ad-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:26:12 onbon.bx05.file.BxFileWriter                            - 1603855571992> C000> StartWriteFile, 0.044 secs
+DEBUG 11:26:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-4e-4e-00-90-96-45-00-00-00-00-00-00-34-00-8b-dc-fa-01-a1-0c-2f-00-43-30-30-30-01-00-00-00-00-01-4c-45-44-30-30-35-32-33-0b-02-02-80-00-20-00-03-00-00-01-00-03-0c-00-00-11-00-00-00-00-00-00-00-00-00-00-d1-c3-5a-5a
+DEBUG 11:26:12 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+INFO  11:26:12 onbon.bx05.file.BxFileWriter                            - 1603855571992> C000> WriteFileBlock. offset:0, size:38, lastFlag:true, 0.837 secs
+DEBUG 11:26:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-4e-ce-00-02-96-c9-8a-8a-8a-8a-8a-8a-09-00-0a-78-7c-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:26:12 onbon.bx05.file.BxFileWriter                            - 1603855571992> C000> StartWriteFile success
+DEBUG 11:26:12 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-96-51-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-63-01-a2-00-00-00-5a-5a
+DEBUG 11:26:12 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+INFO  11:26:12 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.03 secs, result: 正確
+DEBUG 11:26:12 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-96-d1-00-02-96-35-8a-8a-8a-8a-8a-8a-28-00-fc-cf-2f-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:26:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:26:12 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:26:12 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-fe-ff-00-80-05-00-fe-ff-01-00-6c-52-00-90-96-45-00-00-00-00-00-00-05-00-1e-78-9a-01-a2-00-00-00-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a2-80 tx:00-80-fe-ff callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-fe-ff-05-00-54-03-01-00-6c-d2-00-02-96-e4-8a-8a-8a-8a-8a-8a-28-00-fc-cf-07-00-a2-80-00-00-00-00-1f-00-54-03-31-39-30-37-30-38-31-30-01-0b-02-02-80-00-20-00-03-10-01-10-00-00-00-00-00-00-00-01-00-5a
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> execute: Ping, 0.02 secs, result: 正確
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 bufferSize:14336, fixedSeqNo:-1, fixedPhyType:-1
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> Fixed SeqNo: null
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> 54-03 width:128, height:32, colorCode:3
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-82-52-00-90-96-45-00-00-00-00-00-00-05-00-9f-fe-2d-01-a1-08-00-00-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-82-d2-00-02-96-a6-01-8a-8a-8a-8a-8a-8a-09-00-0a-78-c3-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> StartFileTranfs
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-8a-52-00-90-96-45-00-00-00-00-00-00-07-00-40-0a-0c-01-a1-06-02-00-00-05-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-86 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-8a-d2-00-02-96-58-8a-8a-8a-8a-8a-8a-0b-00-9d-40-98-00-a1-86-02-00-00-00-02-00-00-00-5a
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> execute: StartReadDirCmd, 0.005 secs, result: 正確
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-90-52-00-90-96-45-00-00-00-00-00-00-07-00-bd-c9-28-01-a1-07-02-00-00-00-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-87 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-90-d2-00-02-96-98-8a-8a-8a-8a-8a-8a-0e-00-1d-55-d2-00-a1-87-00-00-00-00-05-00-01-00-00-00-00-5a
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> execute: ReadDirBlockCmd, 0.005 secs, result: 正確
+DEBUG 11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> totalSize: 1084
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-9e-52-00-90-96-45-00-00-00-00-00-00-05-00-be-39-d7-01-a1-12-00-00-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a1-92 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-9e-d2-00-02-96-57-8a-8a-8a-8a-8a-8a-11-00-5d-cc-d5-00-a1-92-00-00-00-00-08-00-00-60-3b-00-00-60-3b-00-5a
+INFO  11:26:13 onbon.bx05.Bx5GController                               - MyScreen> execute: GetMemVolumeCmd, 0.004 secs, result: 正確
+DEBUG 11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> MEM available:3891200, delete:0, write:1084
+DEBUG 11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> WriteFile bufferSize: 14336
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a4-52-00-90-96-45-00-00-00-00-00-00-13-00-6d-1c-0d-01-a1-02-0e-00-50-30-30-30-00-3c-04-00-00-01-40-1b-be-ea-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a4-d2-00-02-96-e8-8a-8a-8a-8a-8a-8a-09-00-0b-9a-48-00-a0-00-02-00-00-00-00-00-5a
+INFO  11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> P000> StartWriteFile, 0.004 secs
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-a8-52-00-90-96-45-00-00-00-00-00-00-4a-04-d4-48-b1-01-a1-03-45-04-50-30-30-30-01-00-00-00-00-00-50-30-30-30-00-00-01-00-00-ff-ff-ff-10-28-99-20-12-31-00-00-00-01-1d-04-00-00-00-00-00-00-00-80-00-20-00-00-01-00-0d-04-00-00-00-01-00-0a-ee-02-01-80 ... total:1135
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-a8-d2-00-02-96-ac-8a-8a-8a-8a-8a-8a-09-00-0a-78-e3-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> P000> WriteFileBlock. offset:0, size:1084, lastFlag:true, 0.626 secs
+INFO  11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> P000> StartWriteFile success
+DEBUG 11:26:13 uia.comm.SocketDataController                           - MyScreen> send a5-a5-a5-a5-a5-a5-a5-a5-0b-02-00-80-05-00-54-03-01-00-1a-55-00-90-96-45-00-00-00-00-00-00-05-00-ce-3e-23-01-a1-09-00-00-5a-5a
+DEBUG 11:26:13 uia.comm.SocketClient                                   - MyScreen> cmd:a0-00 tx:00-80-0b-02 callout reply
+DEBUG 11:26:13 onbon.bx05.Bx5GControllerClient                         - MyScreen> recv a5-a5-a5-a5-a5-a5-a5-00-80-0b-02-05-00-54-03-01-00-1a-d5-00-02-96-c4-8a-8a-8a-8a-8a-8a-09-00-0a-78-3e-00-a0-00-00-00-00-00-00-00-5a
+INFO  11:26:13 onbon.bx05.file.BxFileWriter                            - 1603855573098> EndFileTransf
+INFO  11:26:13 uia.comm.SocketClient                                   - MyScreen> disconnect

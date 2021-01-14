@@ -1,0 +1,112 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-4.2.xsd
+	http://www.springframework.org/schema/util 
+	http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+	
+	<beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+		<beans:constructor-arg name="strength" value="10" />
+	</beans:bean>
+	<beans:bean id="daoAuthenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">  
+		<beans:property name="userDetailsService" ref="myUserDetailsService" />
+		<beans:property name="hideUserNotFoundExceptions" value="false"/>
+		<beans:property name="passwordEncoder" ref="bcryptEncoder"/>
+   </beans:bean>
+	
+	<authentication-manager id="authenticationManager">
+		<authentication-provider ref="daoAuthenticationProvider">
+		</authentication-provider>
+	</authentication-manager>
+	
+	<http pattern="/grain_alarm" security="none" />
+	<http pattern="/external/**" security="none" />
+    
+	<http pattern="/api/**" entry-point-ref="ep401">
+		<intercept-url pattern="/api/**" access="isAuthenticated()"/>
+        <http-basic/>
+		<csrf disabled="true"/>
+	</http>
+    
+	<http pattern="/auth/**" entry-point-ref="ep401">
+        <intercept-url pattern="/auth/**" access="isAuthenticated()"/>
+        <http-basic/>
+		<csrf disabled="true"/>
+	</http>
+    
+	<http pattern="/**" authentication-manager-ref="authenticationManager" entry-point-ref="ajaxAwareLoginUrlAuthenticationEntryPoint">
+		<!-- <intercept-url pattern="/page/login.html" access="permitAll" requires-channel="https"/> -->
+		<intercept-url pattern="/page/index.html" access="isAuthenticated()"/>
+		<intercept-url pattern="/ies/page/index.html" access="isAuthenticated()"/>
+		<intercept-url pattern="/page/views/**" access="isAuthenticated()"/>
+		<intercept-url pattern="/page/**" access="permitAll"/>
+		<intercept-url pattern="/assets/**" access="permitAll"/>
+		<intercept-url pattern="/ies/page/views/**" access="isAuthenticated()"/>
+		<intercept-url pattern="/ies/page/**" access="permitAll"/>
+		<intercept-url pattern="/ies/assets/**" access="permitAll"/>
+		<intercept-url pattern="/**" access="isAuthenticated()"/>
+		<form-login 
+			authentication-failure-handler-ref="customAuthenticationFailureHandler"
+			authentication-success-handler-ref="customAuthenticationSuccessHandler"
+		    login-page="/page/login.html"
+		    login-processing-url="/j_spring_security_check"
+			username-parameter="username"
+			password-parameter="password"/>
+		<logout logout-success-url="/page/login.html?logout=true" logout-url="/j_spring_security_logout" invalidate-session="false"/>
+		<!-- disable csrf protection -->
+		<csrf disabled="true"/>
+		
+		<port-mappings>
+        	<port-mapping http="8888" https="8443"/>
+    	</port-mappings>
+        <http-basic/>
+	</http>
+	
+	<beans:bean id="ep401" class="org.springframework.security.web.authentication.HttpStatusEntryPoint">
+		<beans:constructor-arg name="httpStatus">
+			<util:constant static-field="org.springframework.http.HttpStatus.UNAUTHORIZED"/>
+		</beans:constructor-arg>
+	</beans:bean>
+	
+	<beans:bean id="ajaxAwareLoginUrlAuthenticationEntryPoint" class="com.haut.grm.bean.AjaxAwareLoginUrlAuthenticationEntryPoint">
+		<beans:constructor-arg value="/page/login.html" />
+	</beans:bean>
+	
+	<beans:bean id="accessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+	    <beans:constructor-arg name="decisionVoters">
+	        <beans:list>
+	            <beans:bean class="org.springframework.security.web.access.expression.WebExpressionVoter"/>
+	            <beans:bean class="org.springframework.security.access.vote.RoleVoter">
+	                <beans:property name="rolePrefix" value="ROLE_"/>
+	            </beans:bean>
+	            <beans:bean class="org.springframework.security.access.vote.AuthenticatedVoter"/>
+	        </beans:list>
+	    </beans:constructor-arg>
+	</beans:bean>
+	
+	<beans:bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<beans:property name="targetClass"
+			value="org.springframework.security.core.context.SecurityContextHolder"/>
+		<beans:property name="targetMethod" value="setStrategyName"/>
+		<beans:property name="arguments"><beans:list><beans:value>MODE_INHERITABLETHREADLOCAL</beans:value></beans:list></beans:property>
+	</beans:bean>
+ 
+ 
+ 	<beans:bean  id="demoFilter" class="com.haut.grm.bean.ValidateCodeFilter">
+	
+	
+		
+	</beans:bean>
+ 
+ 
+ 
+ 
+ 
+</beans:beans>

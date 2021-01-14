@@ -1,0 +1,222 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:repository="http://www.springframework.org/schema/data/repository"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+    http://www.springframework.org/schema/data/jpa
+    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    http://www.springframework.org/schema/data/repository
+    http://www.springframework.org/schema/data/repository/spring-repository.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-4.3.xsd ">
+	
+
+
+	<!--配置swagger
+	<bean id="swaggerConfig" class="com.haut.grm.bean.SwaggerConfig"/>
+-->
+	<bean id="auditorAwareImp" class="com.haut.grm.bean.SpringSecurityAuditorAware"/>
+	<jpa:auditing auditor-aware-ref="auditorAwareImp" />
+	
+	<!-- MySQL data source -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		
+		<property name="minPoolSize" value="5"/>
+		<property name="maxPoolSize" value="20"/>
+		<property name="maxIdleTime" value="6000"/> 
+		<property name="preferredTestQuery" value="SELECT 1"/>    
+		<property name="idleConnectionTestPeriod" value="1800"/>    
+		<property name="testConnectionOnCheckout" value="true"/>  
+ 
+		<property name="driverClass" value="${db.driverClassName}" />
+		<property name="jdbcUrl" value="jdbc:mysql://${db.address}:${db.port}/${db.schema}?useUnicode=${db.useUnicode}&amp;characterEncoding=${db.characterEncoding}&amp;useSSL=${db.useSSL}&amp;autoReconnect=true" />
+		<property name="user" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+	</bean>
+	
+	<!-- Create default configuration for Hibernate -->
+	<bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+	
+	<!-- Configure the entity manager factory bean -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+	  <property name="dataSource" ref="dataSource"/>
+	  <property name="persistenceProvider">
+	    <bean class="org.hibernate.ejb.HibernatePersistence"/>
+	  </property>
+	  <!-- Set JPA properties -->
+	  <property name="jpaProperties">
+	    <props>
+	      <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+	      <prop key="hibernate.show_sql">false</prop>
+	      <prop key="hibernate.id.new_generator_mappings">false</prop>
+	      <prop key="javax.persistence.schema-generation.database.action">none</prop>
+	    </props>
+	  </property>
+	  <!-- Set base package of your entities -->
+	  <property name="packagesToScan" value="com.haut.grm.model"/>
+	  <!-- Set share cache mode -->
+	  <property name="sharedCacheMode" value="ENABLE_SELECTIVE"/>
+	  <!-- Set validation mode -->
+	  <property name="validationMode" value="NONE"/>
+	</bean>
+	
+	<!-- Configure the transaction manager bean -->
+	<bean id="transactionManager" 
+	  class="org.springframework.orm.jpa.JpaTransactionManager">
+	  <property name="entityManagerFactory" ref="entityManagerFactory"/>
+	</bean>
+	
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+	    <tx:attributes>
+		<tx:method name="get*" read-only="true" />
+		<tx:method name="find*" read-only="true" />
+		<tx:method name="*" />
+	    </tx:attributes>
+	</tx:advice>
+ 
+	<aop:config>
+	    <aop:pointcut id="userServicePointCut"
+		expression="execution(* com.haut.grm.service.*Service.*(..))" />
+	    <aop:advisor advice-ref="txAdvice" pointcut-ref="userServicePointCut" />
+	</aop:config>
+	
+	 <aop:aspectj-autoproxy proxy-target-class="true"/>
+	
+	<context:component-scan base-package="com.haut.grm.controller" use-default-filters="false">
+	    <context:include-filter expression="org.springframework.stereotype.Controller" type="annotation" />
+	</context:component-scan>
+	<context:component-scan base-package="org.activiti.rest.exception"></context:component-scan>
+	<context:component-scan base-package="org.activiti.rest.service.api"></context:component-scan>
+	
+	
+	<!-- Activiti process Engine -->
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+		<property name="dataSource" ref="dataSource" />
+	    <property name="transactionManager" ref="transactionManager" />
+	    <property name="databaseSchemaUpdate" value="true" />
+	    <property name="asyncExecutorActivate" value="false" />
+		<property name="eventListeners">
+			<list>
+				<bean class="com.haut.grm.activiti.listener.ProcessEventListener" />
+			</list>
+		</property>
+		<property name="beans">
+			<map>
+				<entry key="commonService">
+					<bean class="com.haut.grm.service.CommonService"/>
+				</entry>
+			</map>
+		</property>
+        <property name="activityFontName" value="宋体"/>
+		<property name="labelFontName" value="Microsoft YaHei"/>
+		<property name="annotationFontName" value="宋体"/>
+        <property name="processDiagramGenerator">
+			<bean class="com.haut.grm.activiti.override.GrmProcessDiagramGenerator" />
+		</property>
+        <property name="customFormTypes">
+          <list>
+            <bean class="org.activiti.rest.form.UserFormType"/>
+            <bean class="org.activiti.rest.form.ProcessDefinitionFormType"/>
+            <bean class="org.activiti.rest.form.MonthFormType"/>
+          </list>
+        </property>
+        <property name="formTypes">
+			<bean class="com.haut.grm.activiti.form.GrmFormTypes" />
+		</property>
+  		<property name="deploymentMode" value="single-resource" />
+	    <property name="deploymentResources" value="classpath*:/activiti/*.bpmn" />
+	</bean>
+	
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+	  <property name="processEngineConfiguration" ref="processEngineConfiguration" />
+	</bean>
+	
+	<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
+	<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
+	<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
+	<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
+	<bean id="identityService" factory-bean="processEngine" factory-method="getIdentityService" />
+	<bean id="managementService" factory-bean="processEngine" factory-method="getManagementService" />
+	<bean id="dynamicBpmnService" factory-bean="processEngine" factory-method="getDynamicBpmnService" />
+	<bean id="formService" factory-bean="processEngine" factory-method="getFormService" />
+	
+	<bean id="restResponseFactory" class="org.activiti.rest.service.api.RestResponseFactory"/>
+	<bean id="contentTypeResolver" class="org.activiti.rest.common.application.DefaultContentTypeResolver"/>
+	
+	<!-- 
+	  Configure Spring Data JPA and set the base package of the 
+	  repository interfaces 
+	-->
+	<jpa:repositories base-package="com.haut.grm.repository" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager"/>
+	<jpa:repositories factory-class="org.springframework.data.jpa.datatables.qrepository.QDataTablesRepositoryFactoryBean" base-package="com.haut.grm.datatables.repository" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager"/>
+	
+	<bean class="com.haut.grm.bean.CustomizedRestMvcConfiguration"/>
+	
+	
+	
+	
+	<!--  
+	<bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="jdbcUrl" value="jdbc:sqlserver://${db2.address}:${db2.port};databaseName=${db2.schema};user=${db2.username};password=${db2.password};" />
+		<property name="user" value="${db2.username}" />
+		<property name="password" value="${db2.password}" />
+	</bean>
+	
+	<bean id="msEmf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+	  <property name="dataSource" ref="dataSource2"/>
+      <property name="jpaVendorAdapter">
+          <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+              <property name="showSql" value="false" />
+          </bean>
+      </property>
+	  <property name="jpaProperties">
+	    <props>
+   		  <prop key="hibernate.ejb.entitymanager_factory_name">msEmf</prop>
+	      <prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+	      <prop key="hibernate.default_schema">dbo</prop>
+	      <prop key="hibernate.legacy_limit_handler">true</prop>
+	    </props>
+	  </property>
+	  <property name="packagesToScan" value="com.haut.grm.qt.model"/>
+	</bean>
+	
+	<bean id="msTm"
+	  class="org.springframework.orm.jpa.JpaTransactionManager">
+	  <property name="entityManagerFactory" ref="msEmf"/>
+	</bean>
+	
+	<jpa:repositories base-package="com.haut.grm.qt.repository" entity-manager-factory-ref="msEmf" transaction-manager-ref="msTm"/>
+	
+	<jpa:repositories factory-class="org.springframework.data.jpa.datatables.repository.DataTablesRepositoryFactoryBean" base-package="com.haut.grm.qt.datarepo" entity-manager-factory-ref="msEmf" transaction-manager-ref="msTm"/>
+	-->
+	
+	<!-- 
+	<beans:bean  id="myAnotationInspect" class="com.haut.grm.bean.MyAnotationInspect">
+	 -->
+	<mvc:interceptors>
+  <mvc:interceptor>
+   <mvc:mapping path="/**" />
+   <bean id="tttttttttt" class="com.haut.grm.bean.MyAnotationInspect" />
+  </mvc:interceptor>
+ </mvc:interceptors>
+ 
+ 
+ 
+ 
+	
+</beans>

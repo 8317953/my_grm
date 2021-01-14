@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	    http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/tx
+    	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+
+
+	<annotation-driven />
+	<!-- Scans for annotated @Controllers in the classpath -->
+	
+	<!--  
+	<context:component-scan base-package="com.haut.grm.repository"></context:component-scan>
+	-->
+	
+	<beans:bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+	<annotation-driven>
+		<message-converters>
+			<beans:bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<beans:property name="objectMapper">
+					<beans:bean class="com.haut.grm.bean.HibernateAwareObjectMapper" />
+				</beans:property>
+			</beans:bean>
+		</message-converters>
+	</annotation-driven>
+	
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    	<beans:property name="maxUploadSize" value="50000000"/>
+	</beans:bean>
+	
+	 
+	
+	<!--  -->
+	<context:annotation-config/>
+<default-servlet-handler/>
+<resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
+<resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
+
+<context:component-scan base-package="springfox"/>
+	
+	
+	
+	
+	
+	<resources mapping="/page/**" location="/WEB-INF/angularjs/"/>
+	<resources mapping="/assets/**" location="/WEB-INF/assets/" cache-period="2592000"/>
+	<resources mapping="/overview/page/**" location="/WEB-INF/overview/angularjs/"/>
+	<resources mapping="/overview/assets/**" location="/WEB-INF/overview/assets/" cache-period="2592000"/>
+	<resources mapping="/ies/page/**" location="/WEB-INF/ies/angular/"/>
+	<resources mapping="/ies/assets/**" location="/WEB-INF/ies/assets/" cache-period="2592000"/>
+	<resources mapping="/assets/myimage/**" location="/WEB-INF/assets/myimage/" cache-period="2592000"/>
+	<resources mapping="/assets2/**" location="/WEB-INF/assets2/" cache-period="2592000"/>
+</beans:beans>
