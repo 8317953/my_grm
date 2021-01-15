@@ -32,6 +32,10 @@ public class QSdTfEquipStatus extends EntityPathBase<SdTfEquipStatus> {
 
     public final DateTimePath<java.util.Date> inputtime = createDateTime("inputtime", java.util.Date.class);
 
+    public final QSdTfDate sdTfDate;
+
+    public final QSdTfPlane sdTfPlane;
+
     public final QSdTfSb tfequip;
 
     public QSdTfEquipStatus(String variable) {
@@ -54,6 +58,8 @@ public class QSdTfEquipStatus extends EntityPathBase<SdTfEquipStatus> {
         super(type, metadata, inits);
         this.equipstatus = inits.isInitialized("equipstatus") ? new com.haut.grm.model.type.QEquipStatusType(forProperty("equipstatus")) : null;
         this.inputer = inits.isInitialized("inputer") ? new com.haut.grm.model.meta.QUser(forProperty("inputer"), inits.get("inputer")) : null;
+        this.sdTfDate = inits.isInitialized("sdTfDate") ? new QSdTfDate(forProperty("sdTfDate"), inits.get("sdTfDate")) : null;
+        this.sdTfPlane = inits.isInitialized("sdTfPlane") ? new QSdTfPlane(forProperty("sdTfPlane"), inits.get("sdTfPlane")) : null;
         this.tfequip = inits.isInitialized("tfequip") ? new QSdTfSb(forProperty("tfequip"), inits.get("tfequip")) : null;
     }
 

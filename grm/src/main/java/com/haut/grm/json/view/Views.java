@@ -425,6 +425,17 @@ public class Views {
 
     public static interface StoreRefDoorView extends com.haut.grm.json.view.Views.DoorView {
     }
+    
+    public static interface StoreRefSdTfSbView extends com.haut.grm.json.view.Views.StoreView{
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
     public static interface StoreRefStatusView extends com.haut.grm.json.view.Views.StoreStatusView {
     }
@@ -474,6 +485,9 @@ public class Views {
     }
     public static interface DataSdTfPlaneToEntryView extends com.haut.grm.json.view.Views.SdTfPlaneToEntryView,org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
     }
+    public static interface SdTfPlaneToTfEquipView extends com.haut.grm.json.view.Views.TfEquipStatusToEquipView, com.haut.grm.json.view.Views.SdTfPlaneView{
+    }
+    
     
     
     
@@ -610,6 +624,18 @@ public class Views {
     public static interface TfEquipToStatusAndStoreView extends com.haut.grm.json.view.Views.TfEquipToStatusView,com.haut.grm.json.view.Views.TfToStoreView{
     }
     
+    
+    public static  interface TfEquipStatusToTfPlaneView extends com.haut.grm.json.view.Views.SdTfPlaneView{
+    }
+    
+    
+    
+    public static  interface TfEquipStatusToTfDataView extends com.haut.grm.json.view.Views.SdTfDateView{
+    }
+    
+    
+    public static  interface SdTfDataToTfEquipView extends com.haut.grm.json.view.Views.TfEquipStatusToEquipView{
+    }
     
     
     

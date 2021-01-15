@@ -24,6 +24,8 @@ public class QSdTfSb extends EntityPathBase<SdTfSb> {
 
     public final com.haut.grm.model.base.QAbstractEntity _super = new com.haut.grm.model.base.QAbstractEntity(this);
 
+    public final NumberPath<Integer> canMove = createNumber("canMove", Integer.class);
+
     public final StringPath code = createString("code");
 
     public final NumberPath<Integer> codeid = createNumber("codeid", Integer.class);

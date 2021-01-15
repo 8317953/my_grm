@@ -110,7 +110,19 @@ public class SdTfPlane  extends AbstractEntity<Long>{
 	@JsonView(Views.SdTfPlaneView.class)
 	private PlaneProcessType processType;
 	
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "sdTfPlane")
+	@JsonView(Views.SdTfPlaneToTfEquipView.class)
+	private Set<SdTfEquipStatus> sdTfEquipStatuses;
 	
+	
+
+	public Set<SdTfEquipStatus> getSdTfEquipStatuses() {
+		return sdTfEquipStatuses;
+	}
+
+	public void setSdTfEquipStatuses(Set<SdTfEquipStatus> sdTfEquipStatuses) {
+		this.sdTfEquipStatuses = sdTfEquipStatuses;
+	}
 
 	public PlaneProcessType getProcessType() {
 		return processType;

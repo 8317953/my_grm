@@ -42,6 +42,8 @@ public class QSdTfPlane extends EntityPathBase<SdTfPlane> {
 
     public final com.haut.grm.model.type.QPlaneProcessType processType;
 
+    public final SetPath<SdTfEquipStatus, QSdTfEquipStatus> sdTfEquipStatuses = this.<SdTfEquipStatus, QSdTfEquipStatus>createSet("sdTfEquipStatuses", SdTfEquipStatus.class, QSdTfEquipStatus.class, PathInits.DIRECT2);
+
     public final com.haut.grm.model.type.QSdSfType sftype;
 
     public final DateTimePath<java.util.Date> startdate = createDateTime("startdate", java.util.Date.class);

@@ -33,6 +33,12 @@ import io.swagger.annotations.ApiModelProperty;
 @Table(name="equip_status_table")
 public class SdTfEquipStatus  extends AbstractEntity<Long>{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3829718118201201933L;
+
+
 	@ManyToOne
 	@JoinColumn(name = "sb_id")
 	@JsonView({Views.TfEquipStatusToEquipView.class})
@@ -46,11 +52,43 @@ public class SdTfEquipStatus  extends AbstractEntity<Long>{
 	
 	
 	@ManyToOne
+	@JoinColumn(name = "tf_palne_id")
+	@JsonView({Views.TfEquipStatusToTfPlaneView.class})
+	private SdTfPlane sdTfPlane;
+	
+	
+	@ManyToOne
+	@JoinColumn(name = "tf_data_id")
+	@JsonView({Views.TfEquipStatusToTfDataView.class})
+	private SdTfDate sdTfDate;
+	
+	
+	@ManyToOne
 	@JoinColumn(name = "inputer")
 	@JsonView({Views.IdView.class})
 	private User inputer;
 	
 	
+	public SdTfPlane getSdTfPlane() {
+		return sdTfPlane;
+	}
+
+
+	public void setSdTfPlane(SdTfPlane sdTfPlane) {
+		this.sdTfPlane = sdTfPlane;
+	}
+
+
+	public SdTfDate getSdTfDate() {
+		return sdTfDate;
+	}
+
+
+	public void setSdTfDate(SdTfDate sdTfDate) {
+		this.sdTfDate = sdTfDate;
+	}
+
+
 	@Column(name="inputtime")
 	@JsonView({Views.IdView.class})
 	private Date inputtime;

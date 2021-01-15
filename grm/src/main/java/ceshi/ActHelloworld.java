@@ -15,6 +15,7 @@ import org.activiti.bpmn.model.Task;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
 import org.activiti.engine.runtime.ProcessInstance;
+import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.junit.Test;
 
 
@@ -28,7 +29,7 @@ public class ActHelloworld {
 	
 	ProcessEngine processEngine=ProcessEngines.getDefaultProcessEngine();//默认从classpath下 找activiti.cfg.xml init()方法中写的有加载xml的文件名
 	
-	
+//	SessionFactoryImplementor s
 	@Test
 	public void getPng() throws IOException {
 		

@@ -92,6 +92,21 @@ import com.haut.grm.json.view.Views;
 /*     */   @JsonView({Views.StoreRefDoorView.class})
 /*     */   @OrderBy("codeId ASC")
 /*     */   private Set<Door> doors;
+
+			@OneToMany(fetch=FetchType.EAGER, mappedBy="store")
+			@JsonView({Views.StoreRefSdTfSbView.class})
+			@OrderBy("id ASC")
+			private Set<SdTfSb> sdTfSbs;
+
+			
+			
+			
+			public Set<SdTfSb> getSdTfSbs() {
+				return sdTfSbs;
+			}
+			public void setSdTfSbs(Set<SdTfSb> sdTfSbs) {
+				this.sdTfSbs = sdTfSbs;
+			}
 /*     */   
 /*     */   public String getName()
 /*     */   {
