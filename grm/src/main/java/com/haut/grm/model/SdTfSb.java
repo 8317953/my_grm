@@ -83,7 +83,7 @@ public class SdTfSb   extends AbstractEntity<Long>{
 	private Set<SdTfEquipStatus> sdTfEquipStatuses;
 	
 	
-	@Column(name="can_move;")
+	@Column(name="can_move")
 	@JsonView({Views.IdView.class})
 	private Integer canMove;
 
