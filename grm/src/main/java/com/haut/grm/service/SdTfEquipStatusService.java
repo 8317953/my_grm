@@ -14,11 +14,8 @@ import com.haut.grm.repository.SdTfEquipStatusRepository;
 
 /**
  * @Description 通风设备状态的增删改查
- 
  * @author fuq
- 
  * @Date 2021/1/15 14点45分
- 
  */
 @Service
 public class SdTfEquipStatusService {
@@ -79,8 +76,12 @@ public class SdTfEquipStatusService {
 	
 	/**
 	* @method updTfEquipStatus(修改通风设备状态信息)
-	* @param id
+	* @param 通风设备实体
 	* @author fuq
 	* @date 2021/1/15 14点45分
 	*/
+    public SdTfEquipStatus updTfEquipStatus(SdTfEquipStatus sdtfEquipStatus) {
+		
+		return sdtfequipRepo.save(sdtfEquipStatus);
+	}
 }
