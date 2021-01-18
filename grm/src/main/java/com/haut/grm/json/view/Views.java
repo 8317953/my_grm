@@ -350,6 +350,12 @@ public class Views {
 
     public static interface PlanTypeView extends com.haut.grm.json.view.Views.BaseTypeView {
     }
+    
+    
+    public static interface FmToStoreView extends com.haut.grm.json.view.Views.StoreView,com.haut.grm.json.view.Views.BaseTypeView{
+    }
+    
+    
 
     public static interface RegisterRecordForDataTablesView extends com.haut.grm.json.view.Views.RegisterRecordView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View {
     }
