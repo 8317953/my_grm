@@ -45,7 +45,7 @@ public class SdTfSbService {
 	* @author fuq
 	* @date 2021/1/16 9点3分
 	*/
-	public SdTfSb svateSdTfSb(SdTfSb sdtfsb) {
+	public SdTfSb saveSdTfSb(SdTfSb sdtfsb) {
 		
 		return tfsbRepo.save(sdtfsb);
 	}
@@ -76,7 +76,7 @@ public class SdTfSbService {
 	* @method updSdTfSb(修改通风设备信息)
 	* @param 通风设备实体
 	* @author fuq
-	* @date 2021/1/15 14点45分
+	* @date 2021/1/16 9点3分
 	*/
 	public SdTfSb updSdTfSb(SdTfSb sdtfsb) {
 		
