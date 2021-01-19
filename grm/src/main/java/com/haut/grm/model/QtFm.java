@@ -36,7 +36,7 @@ public class QtFm  extends AbstractEntity<Long>{
 	
 	@ManyToOne
 	@JoinColumn(name="store_id")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtFmView.class})
 	private Store store;
 	
 	@Column(name="ip")

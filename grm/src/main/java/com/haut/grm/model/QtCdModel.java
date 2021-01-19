@@ -39,57 +39,57 @@ public class QtCdModel  extends AbstractEntity<Long>{
 	
 	@ManyToOne
 	@JoinColumn(name = "store_id")
-	@JsonView({Views.FmToStoreView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private Store store;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm1")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm1;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm2")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm2;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm3")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm3;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm4")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm4;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm5")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm5;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm6")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm6;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm7")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm7;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm8")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm8;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm9")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm9;
 	
 	@ManyToOne
 	@JoinColumn(name = "fm10")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtCdModelView.class})
 	private QtFm fm10;
 
 	public Integer getCodeid() {

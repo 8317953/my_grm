@@ -35,12 +35,12 @@ public class Qtcdjl  extends AbstractEntity<Long>{
 	
 	@ManyToOne
 	@JoinColumn(name="cd_model_id")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtcdjlView.class})
 	private QtCdModel cdmodelid;
 	
 	@ManyToOne
 	@JoinColumn(name="store_id")
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtcdjlView.class})
 	private Store storeid;
 	
 	@Column(name="yushenongdu")

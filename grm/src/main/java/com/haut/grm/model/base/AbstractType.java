@@ -12,10 +12,10 @@ import com.haut.grm.json.view.Views;
 /*    */   extends AbstractEntity<Long>
 /*    */ {
 /*    */   private static final long serialVersionUID = -314539126489012262L;
-/*    */   @JsonView({Views.BaseTypeView.class})
+/*    */   @JsonView({Views.IdView.class})
 /*    */   @Column(name="name")
 /*    */   protected String name;
-/*    */   @JsonView({Views.BaseTypeView.class})
+/*    */   @JsonView({Views.IdView.class})
 /*    */   @Column(name="code_id")
 /*    */   protected Integer codeId;
 /*    */   

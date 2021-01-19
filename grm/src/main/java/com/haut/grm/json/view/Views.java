@@ -646,4 +646,45 @@ public class Views {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    public static interface QtFmView extends com.haut.grm.json.view.Views.IdView {
+    }
+	
+	public static interface QtFmDatableView extends com.haut.grm.json.view.Views.QtFmView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
+		
+	}
+    
+    
+	public static interface QtCdModelView extends com.haut.grm.json.view.Views.IdView {
+    }
+	
+	public static interface QtCdModelDatableView extends com.haut.grm.json.view.Views.QtCdModelView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
+		
+	}
+    
+	public static interface QtcdjlView extends com.haut.grm.json.view.Views.IdView {
+    }
+	
+	public static interface QtcdjlDatableView extends com.haut.grm.json.view.Views.QtcdjlView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
+		
+	}
+    
+	public static interface QtSjView extends com.haut.grm.json.view.Views.IdView {
+    }
+	
+	public static interface QtSjDatableView extends com.haut.grm.json.view.Views.QtSjView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
+		
+	}
+    
+    
 }

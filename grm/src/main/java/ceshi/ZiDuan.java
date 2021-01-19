@@ -8,7 +8,11 @@ public class ZiDuan {
 	public String getType() {
 		if(columnName.endsWith("_id")&&!columnName.contains("code_id")) {
 			return "MyObject";
-		}else {
+		}
+		else if(columnName.contains("inputer")||columnName.contains("manager")||columnName.contains("acter")) {
+			return "User";
+		}
+		else {
 			if("INT".equals(columnTypeName)) {
 				return "Integer";
 			}else if("VARCHAR".equals(columnTypeName)) {
