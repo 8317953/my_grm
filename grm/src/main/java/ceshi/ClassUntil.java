@@ -29,7 +29,8 @@ public class ClassUntil {
 	static String user = "root";	//用户名
 	static String password = "123456";	//用户密码
 	
-	static String tablename="qt_qt_data";
+//	static String tablename="qt_qt_data";
+	static String tablename=null;
 	
 //	static String className="QtSj";
 	static String className=null;
@@ -113,15 +114,22 @@ public class ClassUntil {
 	
 	
 	public static void getClassName() {
-		String str=tablename.replace("_", "");
-//		objName=str;
-		String a=(str.charAt(0)+"").toUpperCase();
-		str=str.substring(1,str.length());
-		str=a+str;
-		if(className==null) {
+		String str=null;
+		if(tablename!=null) {
+			str=tablename.replace("_", "");
+//			objName=str;
+			String a=(str.charAt(0)+"").toUpperCase();
+			str=str.substring(1,str.length());
+			str=a+str;
+		}
+		
+		if(className==null&&str!=null) {
 			className=str;
 		}
-		objName=className.toLowerCase();
+		if(className!=null) {
+			objName=className.toLowerCase();
+		}
+		
 	}
 	
 	
@@ -129,6 +137,9 @@ public class ClassUntil {
 	
 	
 	public static void outClass() throws IOException {
+		if(className==null) {
+			return;
+		}
 		File file=new File(desUrl+"outclass");
 		boolean bo=file.exists();
 		if(!bo) {
