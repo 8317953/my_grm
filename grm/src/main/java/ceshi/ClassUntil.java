@@ -129,6 +129,9 @@ public class ClassUntil {
 	}
 	
 	
+	
+	
+	
 	public static void outClass() throws IOException {
 <<<<<<< HEAD
 		File file=new File("C:\\Users\\19601\\Desktop\\outclass");
