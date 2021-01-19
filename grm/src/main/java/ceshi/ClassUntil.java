@@ -1,9 +1,11 @@
 package ceshi;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -29,7 +31,7 @@ public class ClassUntil {
 	static String user = "root";	//用户名
 	static String password = "123456";	//用户密码
 	
-//	static String tablename="qt_qt_data";
+//	static String tablename="nh_data";
 	static String tablename=null;
 	
 //	static String className="QtSj";
@@ -186,32 +188,65 @@ public class ClassUntil {
 			return;
 		}
 		
-		File file=new File(desUrl+"outclass\\"+className+"View.java");
-		if(!file.exists()) {
-			file.createNewFile();
+		File file=new File("src\\main\\java\\com\\haut\\grm\\json\\view\\"+"Views.java");
+		
+		BufferedReader in=new BufferedReader(new FileReader(file));
+		String line=null;
+		line=in.readLine();
+		
+		String strRe="";
+		while (line!=null) {
+			strRe=strRe+line+"\r\n";
+			line=in.readLine();
+			if(line!=null) {
+				if(line.contains("//"+className+"View")) {
+					in.close();
+					return;
+				}
+				if(line.contains("//end")) {
+					System.out.println(line);
+					
+					String myView="	//"+className+"View\r\n" + 
+							"	public static interface "+className+"View extends com.haut.grm.json.view.Views.IdView {\r\n" + 
+							"    }\r\n" + 
+							"	\r\n" + 
+							"	public static interface "+className+"DatableView extends com.haut.grm.json.view.Views."+className+"View, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{\r\n" + 
+							"		\r\n" + 
+							"	}\r\n" + 
+							"	//end\r\n" + 
+							"	";
+					line=myView;
+				}
+			}
+			
 		}
+		
+		System.out.println(strRe);
+		
+		in.close();
+		
 		FileOutputStream out = new FileOutputStream(file);
 		OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
 		BufferedWriter bw = new BufferedWriter(outWriter);
-		
-		String result=null;
-		
-		String orginStr="package com.haut.grm.json.view;\r\n" + 
-				"\r\n" + 
-				"public class Views {\r\n" + 
-				"\r\n" + 
-				"    public static interface **classname**View extends com.haut.grm.json.view.Views.IdView {\r\n" + 
-				"    }\r\n" + 
-				"	\r\n" + 
-				"	public static interface **classname**DatableView extends com.haut.grm.json.view.Views.**classname**View, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{\r\n" + 
-				"		\r\n" + 
-				"	}\r\n" + 
-				"\r\n" + 
-				"}";
-
-		
-		result=orginStr.replace("**classname**", className).replace("**objname**", objName);
-		bw.write(result);
+//		
+//		String result=null;
+//		
+//		String orginStr="package com.haut.grm.json.view;\r\n" + 
+//				"\r\n" + 
+//				"public class Views {\r\n" + 
+//				"\r\n" + 
+//				"    public static interface **classname**View extends com.haut.grm.json.view.Views.IdView {\r\n" + 
+//				"    }\r\n" + 
+//				"	\r\n" + 
+//				"	public static interface **classname**DatableView extends com.haut.grm.json.view.Views.**classname**View, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{\r\n" + 
+//				"		\r\n" + 
+//				"	}\r\n" + 
+//				"\r\n" + 
+//				"}";
+//
+//		
+//		result=orginStr.replace("**classname**", className).replace("**objname**", objName);
+		bw.write(strRe);
 		
 		bw.close();
 		outWriter.close();
@@ -238,7 +273,7 @@ public class ClassUntil {
 			return;
 		}
 		
-		File file=new File(desUrl+"outclass\\controller\\"+className+"Controller.java");
+		File file=new File("src\\main\\java\\com\\haut\\grm\\controller\\"+className+"Controller.java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -349,7 +384,7 @@ public class ClassUntil {
 			return;
 		}
 		
-		File file=new File(desUrl+"outclass\\service\\"+className+"Service.java");
+		File file=new File("src\\main\\java\\com\\haut\\grm\\service\\"+className+"Service.java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -435,7 +470,7 @@ public class ClassUntil {
 			return;
 		}
 		
-		File file=new File(desUrl+"outclass\\datatables\\"+className+"DataTablesRepository.java");
+		File file=new File("src\\main\\java\\com\\haut\\grm\\datatables\\repository\\"+className+"DataTablesRepository.java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -469,7 +504,16 @@ public class ClassUntil {
 	
 	
 	public static void outRepositoryClass() throws IOException {
-		File file=new File(desUrl+"outclass\\repository\\"+className+"Repository.java");
+		
+		
+		File file=null;
+		
+		if(tablename.endsWith("type")) {
+			file=new File("src\\main\\java\\com\\haut\\grm\\repository\\type\\"+className+"Repository.java");
+		}else {
+			file=new File("src\\main\\java\\com\\haut\\grm\\repository\\"+className+"Repository.java");
+		}
+		
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -519,7 +563,7 @@ public class ClassUntil {
 				"{}";
 		
 		if(tablename.endsWith("type")) {
-			result=orginTypeStr.replace("**className**", className);
+			result=orginTypeStr.replace("**classname**", className);
 		}else {
 			result=orginStr.replace("**classname**", className);
 		}
@@ -542,7 +586,15 @@ public class ClassUntil {
 	
 	
 	public static void outModelClass() throws IOException {
-		File file=new File(desUrl+"outclass\\model\\"+className+".java");
+		File file=null;
+		
+		if(tablename.endsWith("type")) {
+			file=new File("src\\main\\java\\com\\haut\\grm\\model\\type\\"+className+".java");
+		}else {
+			file=new File("src\\main\\java\\com\\haut\\grm\\model\\"+className+".java");
+		}
+		
+		
 		if(!file.exists()) {
 			file.createNewFile();
 		}

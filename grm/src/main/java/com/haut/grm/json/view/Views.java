@@ -1,7 +1,3 @@
-
-  // IntelliJ API Decompiler stub source generated from a class file
-  // Implementation of methods is not available
-
 package com.haut.grm.json.view;
 
 public class Views {
@@ -686,5 +682,25 @@ public class Views {
 		
 	}
     
-    
+
+
+	//NhdataView
+	public static interface NhdataView extends com.haut.grm.json.view.Views.IdView {
+    }
+	
+	public static interface NhdataDatableView extends com.haut.grm.json.view.Views.NhdataView, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{
+		
+	}
+	//end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
