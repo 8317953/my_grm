@@ -46,7 +46,7 @@ import com.haut.grm.json.view.Views;
 /*     */   @JsonView({Views.StoreView.class})
 /*     */   private Integer codeId;
 /*     */   @Column(name="name")
-/*     */   @JsonView({Views.StoreView.class})
+/*     */   @JsonView({Views.IdView.class})
 /*     */   private String name;
 /*     */   @Column(name="length")
 /*     */   @JsonView({Views.StoreView.class})

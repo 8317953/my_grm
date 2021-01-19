@@ -1,7 +1,3 @@
-
-  // IntelliJ API Decompiler stub source generated from a class file
-  // Implementation of methods is not available
-
 package com.haut.grm.repository;
 
 
@@ -23,8 +19,7 @@ import com.haut.grm.repository.base.BaseEntityRepository;
 
 @RepositoryRestResource
 public interface QtFmRepository extends BaseEntityRepository<QtFm,Long>, QueryDslPredicateExecutor<QtFm>, QuerydslBinderCustomizer<QQtFm> {
-    default void customize(QuerydslBindings bindings, QQtFm qtFm) { /* compiled code */ }
+    default void customize(QuerydslBindings bindings, QQtFm obj) { /* compiled code */ }
 
- 
      
 }

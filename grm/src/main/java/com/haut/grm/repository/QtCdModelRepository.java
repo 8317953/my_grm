@@ -19,7 +19,7 @@ import com.haut.grm.repository.base.BaseEntityRepository;
 
 @RepositoryRestResource
 public interface QtCdModelRepository extends BaseEntityRepository<QtCdModel,Long>, QueryDslPredicateExecutor<QtCdModel>, QuerydslBinderCustomizer<QQtCdModel> {
-    default void customize(QuerydslBindings bindings, QQtCdModel qtCdModel) { /* compiled code */ }
+    default void customize(QuerydslBindings bindings, QQtCdModel obj) { /* compiled code */ }
 
      
 }

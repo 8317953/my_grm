@@ -29,18 +29,22 @@ public class ClassUntil {
 	static String user = "root";	//用户名
 	static String password = "123456";	//用户密码
 	
-	static String tablename="qt_cd_jl";
+	static String tablename="qt_qt_data";
 	
+//	static String className="QtSj";
 	static String className=null;
+	
+	static String objName=null;
 	
 	static List<ZiDuan> list=new ArrayList<ZiDuan>();
 	
+	public static String desUrl="C:\\Users\\10231\\Desktop\\";
 	
 	static {
 		getClassName();
 		list=main1();
-		System.out.println("col size:"+list.size());
-		System.out.println(className);
+//		System.out.println("col size:"+list.size());
+		System.out.println("classname:"+className);
 	}
 	
 	public  static List<ZiDuan> main1() {
@@ -55,7 +59,7 @@ public class ClassUntil {
 	        conn = DriverManager.getConnection(url, user, password);
 	        
 	        
-	        System.out.println(" 实例化Statement对象...");
+//	        System.out.println(" 实例化Statement对象...");
             stmt = conn.createStatement();
         
             String sql = "SELECT * FROM "+tablename;
@@ -110,45 +114,348 @@ public class ClassUntil {
 	
 	public static void getClassName() {
 		String str=tablename.replace("_", "");
+//		objName=str;
 		String a=(str.charAt(0)+"").toUpperCase();
 		str=str.substring(1,str.length());
 		str=a+str;
-		className=str;
+		if(className==null) {
+			className=str;
+		}
+		objName=className.toLowerCase();
 	}
 	
 	
 	public static void outClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass");
+		File file=new File(desUrl+"outclass");
 		boolean bo=file.exists();
 		if(!bo) {
 			bo=file.mkdir();
 		}
 		if(bo) {
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\model");
+			file=new File(desUrl+"outclass\\model");
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outModelClass();
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\repository");
+			file=new File(desUrl+"outclass\\repository");
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outRepositoryClass();
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\service");
+			file=new File(desUrl+"outclass\\datatables");
 			if(!file.exists()) {
 				file.mkdir();
 			}
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\controller");
+			outDatablesClass();
+			file=new File(desUrl+"outclass\\service");
 			if(!file.exists()) {
 				file.mkdir();
 			}
-			
+			outServiceClass();
+			file=new File(desUrl+"outclass\\controller");
+			if(!file.exists()) {
+				file.mkdir();
+			}
+			outControllerClass();
+			outViewClass();
+			System.out.println("完成");
 		}
 	}
 	
 	
+	
+	
+	
+	public static void outViewClass() throws IOException {
+		
+		if(tablename.endsWith("type")) {
+			return;
+		}
+		
+		File file=new File(desUrl+"outclass\\"+className+"View.java");
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		FileOutputStream out = new FileOutputStream(file);
+		OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
+		BufferedWriter bw = new BufferedWriter(outWriter);
+		
+		String result=null;
+		
+		String orginStr="package com.haut.grm.json.view;\r\n" + 
+				"\r\n" + 
+				"public class Views {\r\n" + 
+				"\r\n" + 
+				"    public static interface **classname**View extends com.haut.grm.json.view.Views.IdView {\r\n" + 
+				"    }\r\n" + 
+				"	\r\n" + 
+				"	public static interface **classname**DatableView extends com.haut.grm.json.view.Views.**classname**View, org.springframework.data.jpa.datatables.mapping.DataTablesOutput.View{\r\n" + 
+				"		\r\n" + 
+				"	}\r\n" + 
+				"\r\n" + 
+				"}";
+
+		
+		result=orginStr.replace("**classname**", className).replace("**objname**", objName);
+		bw.write(result);
+		
+		bw.close();
+		outWriter.close();
+		out.close();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void outControllerClass() throws IOException {
+		
+		if(tablename.endsWith("type")) {
+			return;
+		}
+		
+		File file=new File(desUrl+"outclass\\controller\\"+className+"Controller.java");
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		FileOutputStream out = new FileOutputStream(file);
+		OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
+		BufferedWriter bw = new BufferedWriter(outWriter);
+		
+		String result=null;
+		
+		String orginStr="package com.haut.grm.controller;\r\n" + 
+				"\r\n" + 
+				"import java.text.SimpleDateFormat;\r\n" + 
+				"import java.util.Date;\r\n" + 
+				"import java.util.List;\r\n" + 
+				"import java.util.Set;\r\n" + 
+				"\r\n" + 
+				"import javax.validation.Valid;\r\n" + 
+				"\r\n" + 
+				"import org.springframework.beans.factory.annotation.Autowired;\r\n" + 
+				"import org.springframework.data.jpa.datatables.mapping.DataTablesInput;\r\n" + 
+				"import org.springframework.data.jpa.datatables.mapping.DataTablesOutput;\r\n" + 
+				"import org.springframework.web.bind.annotation.PathVariable;\r\n" + 
+				"import org.springframework.web.bind.annotation.RequestBody;\r\n" + 
+				"import org.springframework.web.bind.annotation.RequestMapping;\r\n" + 
+				"import org.springframework.web.bind.annotation.RequestMethod;\r\n" + 
+				"import org.springframework.web.bind.annotation.RestController;\r\n" + 
+				"\r\n" + 
+				"import com.fasterxml.jackson.annotation.JsonView;\r\n" + 
+				"import com.haut.grm.json.view.Views;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.model.**classname**;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.service.**classname**Service;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"import io.swagger.annotations.Api;\r\n" + 
+				"import io.swagger.annotations.ApiOperation;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"@Api(tags=\"\")\r\n" + 
+				"@RestController\r\n" + 
+				"public class **classname**Controller {\r\n" + 
+				"	\r\n" + 
+				"	@Autowired\r\n" + 
+				"	private **classname**Service **objname**Service;\r\n" + 
+				"\r\n" + 
+				"	\r\n" + 
+				"	@ApiOperation(value = \"\")\r\n" + 
+				"	@RequestMapping(value={\"/v1/save**objname**\"}, method={RequestMethod.PUT})\r\n" + 
+				"	public void save**classname**(@RequestBody **classname** **objname**) {\r\n" + 
+				"		**objname**Service.save**classname**(**objname**);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	@ApiOperation(value = \"\")\r\n" + 
+				"	@RequestMapping(value={\"/v1/find**objname**ById/{**objname**Id}\"}, method={RequestMethod.GET})\r\n" + 
+				"	@JsonView({Views.**classname**View.class})\r\n" + 
+				"	public **classname** get**classname**ById(@PathVariable(\"**objname**Id\") Long **objname**Id){\r\n" + 
+				"		return **objname**Service.get**classname**ById(**objname**Id);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	@ApiOperation(value = \"\")\r\n" + 
+				"	@RequestMapping(value={\"/v1/del**objname**/{**objname**Id}\"}, method={RequestMethod.DELETE})\r\n" + 
+				"	public void Delete**classname**ById(@PathVariable(\"**objname**Id\") Long **objname**Id){\r\n" + 
+				"		**objname**Service.delete**classname**ById(**objname**Id);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"\r\n" + 
+				"	@ApiOperation(value = \"\")\r\n" + 
+				"	@RequestMapping(value={\"/v1/getall/**objname**\"}, method={RequestMethod.GET})\r\n" + 
+				"	@JsonView({Views.**classname**View.class})\r\n" + 
+				"	public List<**classname**> getAll**classname**s(){\r\n" + 
+				"		return **objname**Service.getAll**classname**s();\r\n" + 
+				"\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	@RequestMapping(value={\"/get/data/all/**objname**\"}, method={RequestMethod.GET})\r\n" + 
+				"	@JsonView({Views.**classname**DatableView.class})\r\n" + 
+				"	public DataTablesOutput<**classname**> getAllData**classname**s(@Valid DataTablesInput input){\r\n" + 
+				"		return **objname**Service.getAll**classname**Table(input);\r\n" + 
+				"\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"\r\n" + 
+				"	\r\n" + 
+				"}";
+
+		
+		result=orginStr.replace("**classname**", className).replace("**objname**", objName);
+		bw.write(result);
+		
+		bw.close();
+		outWriter.close();
+		out.close();
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static void outServiceClass() throws IOException {
+		
+		if(tablename.endsWith("type")) {
+			return;
+		}
+		
+		File file=new File(desUrl+"outclass\\service\\"+className+"Service.java");
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		FileOutputStream out = new FileOutputStream(file);
+		OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
+		BufferedWriter bw = new BufferedWriter(outWriter);
+		
+		String result=null;
+		
+		String orginStr="package com.haut.grm.service;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.datatables.repository.**classname**DataTablesRepository;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.model.Q**classname**;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.model.**classname**;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.repository.**classname**Repository;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"import java.util.List;\r\n" + 
+				"\r\n" + 
+				"import org.springframework.beans.factory.annotation.Autowired;\r\n" + 
+				"import org.springframework.data.jpa.datatables.mapping.DataTablesInput;\r\n" + 
+				"import org.springframework.data.jpa.datatables.mapping.DataTablesOutput;\r\n" + 
+				"import org.springframework.stereotype.Service;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"@Service\r\n" + 
+				"public class **classname**Service\r\n" + 
+				"{\r\n" + 
+				"	\r\n" + 
+				"	@Autowired\r\n" + 
+				"	private **classname**Repository **objname**Repo;\r\n" + 
+				"		\r\n" + 
+				"\r\n" + 
+				"	@Autowired\r\n" + 
+				"	private **classname**DataTablesRepository **objname**DatableRepo;\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	public List<**classname**> getAll**classname**s(){\r\n" + 
+				"		return **objname**Repo.findAll();\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	public **classname** save**classname**(**classname** **objname**) {\r\n" + 
+				"		return **objname**Repo.save(**objname**);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	public DataTablesOutput<**classname**> getAll**classname**Table(DataTablesInput input){\r\n" + 
+				"		return **objname**DatableRepo.findAll(input);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	public **classname** get**classname**ById(Long **objname**Id) {\r\n" + 
+				"		return **objname**Repo.findOne(**objname**Id);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"	\r\n" + 
+				"	public void delete**classname**ById(Long **objname**Id) {\r\n" + 
+				"		**objname**Repo.delete(**objname**Id);\r\n" + 
+				"	}\r\n" + 
+				"	\r\n" + 
+				"}";
+
+		
+		result=orginStr.replace("**classname**", className).replace("**objname**", objName);
+		bw.write(result);
+		
+		bw.close();
+		outWriter.close();
+		out.close();
+	}
+	
+	
+	
+	public static void outDatablesClass() throws IOException {
+		
+		if(tablename.endsWith("type")) {
+			return;
+		}
+		
+		File file=new File(desUrl+"outclass\\datatables\\"+className+"DataTablesRepository.java");
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		FileOutputStream out = new FileOutputStream(file);
+		OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
+		BufferedWriter bw = new BufferedWriter(outWriter);
+		
+		String result=null;
+		
+		String orginStr="package com.haut.grm.datatables.repository;\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"import org.springframework.data.jpa.datatables.qrepository.QDataTablesRepository;\r\n" + 
+				"\r\n" + 
+				"import com.haut.grm.model.**classname**;\r\n" + 
+				"\r\n" + 
+				"public abstract interface **classname**DataTablesRepository\r\n" + 
+				"  extends QDataTablesRepository<**classname**, Long>\r\n" + 
+				"{}";
+
+		
+		result=orginStr.replace("**classname**", className);
+		bw.write(result);
+		
+		bw.close();
+		outWriter.close();
+		out.close();
+	}
+	
+	
+	
+	
 	public static void outRepositoryClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass\\repository\\"+className+"Repository.java");
+		File file=new File(desUrl+"outclass\\repository\\"+className+"Repository.java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -221,7 +528,7 @@ public class ClassUntil {
 	
 	
 	public static void outModelClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass\\model\\"+className+".java");
+		File file=new File(desUrl+"outclass\\model\\"+className+".java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -231,7 +538,7 @@ public class ClassUntil {
 		String result=null;
 		String atts="";
 		for(ZiDuan zd:list) {
-			System.out.println(zd.columnName);
+//			System.out.println(zd.columnName);
 			if("id".equals(zd.columnName)) {
 				continue;
 			}
@@ -239,7 +546,7 @@ public class ClassUntil {
 			if("MyObject".equals(zd.getType())) {
 				String ana1="	@ManyToOne\r\n";
 				String ana2="	@JoinColumn(name=\""+zd.columnName+"\")\r\n";
-				String ana3="	@JsonView({Views.IdView.class})\r\n";
+				String ana3="	@JsonView({Views."+className+"View.class})\r\n";
 				String ana4="	\r\n";
 				
 				attAnotation=attAnotation+ana4+ana1+ana2+ana3;
