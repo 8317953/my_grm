@@ -38,11 +38,7 @@ public class ClassUntil {
 	
 	static List<ZiDuan> list=new ArrayList<ZiDuan>();
 	
-<<<<<<< HEAD
-	String orginUrl="C:\\Users\\19601\\Desktop";
-=======
 	public static String desUrl="C:\\Users\\10231\\Desktop\\";
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 	
 	static {
 		getClassName();
@@ -133,48 +129,28 @@ public class ClassUntil {
 	
 	
 	public static void outClass() throws IOException {
-<<<<<<< HEAD
-		File file=new File("C:\\Users\\19601\\Desktop\\outclass");
-=======
 		File file=new File(desUrl+"outclass");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 		boolean bo=file.exists();
 		if(!bo) {
 			bo=file.mkdir();
 		}
 		if(bo) {
-<<<<<<< HEAD
-			file=new File("C:\\Users\\19601\\Desktop\\outclass\\model");
-=======
 			file=new File(desUrl+"outclass\\model");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outModelClass();
-<<<<<<< HEAD
-			file=new File("C:\\Users\\19601\\Desktop\\outclass\\repository");
-=======
 			file=new File(desUrl+"outclass\\repository");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outRepositoryClass();
-<<<<<<< HEAD
-			file=new File("C:\\Users\\19601\\Desktop\\outclass\\service");
-			if(!file.exists()) {
-				file.mkdir();
-			}
-			file=new File("C:\\Users\\19601\\Desktop\\outclass\\controller");
-=======
 			file=new File(desUrl+"outclass\\datatables");
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outDatablesClass();
 			file=new File(desUrl+"outclass\\service");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 			if(!file.exists()) {
 				file.mkdir();
 			}
@@ -482,11 +458,7 @@ public class ClassUntil {
 	
 	
 	public static void outRepositoryClass() throws IOException {
-<<<<<<< HEAD
-		File file=new File("C:\\Users\\19601\\Desktop\\outclass\\repository\\"+className+"Repository.java");
-=======
 		File file=new File(desUrl+"outclass\\repository\\"+className+"Repository.java");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -559,11 +531,7 @@ public class ClassUntil {
 	
 	
 	public static void outModelClass() throws IOException {
-<<<<<<< HEAD
-		File file=new File("C:\\Users\\19601\\Desktop\\outclass\\model\\"+className+".java");
-=======
 		File file=new File(desUrl+"outclass\\model\\"+className+".java");
->>>>>>> deff529f344cc5d96a03698fa75ce41e8b38a84c
 		if(!file.exists()) {
 			file.createNewFile();
 		}
