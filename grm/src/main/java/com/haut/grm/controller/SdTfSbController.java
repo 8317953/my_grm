@@ -1,26 +1,26 @@
 package com.haut.grm.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.datatables.mapping.DataTablesInput;
 import org.springframework.data.jpa.datatables.mapping.DataTablesOutput;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.haut.grm.json.view.Views;
 import com.haut.grm.model.SdTfSb;
 import com.haut.grm.service.SdTfSbService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
-/**
- * @Description 通风设备状态的增删改查
- * @author fuq
- * @Date 2021/1/18 8点45分
- */
 @Api(value = "通风设备")
 @RestController
 public class SdTfSbController {
@@ -34,11 +34,26 @@ public class SdTfSbController {
 		tfsbService.saveSdTfSb(sdtfsb);
 	}
 	
+	
 	@ApiOperation(value="查询通风设备")
 	@RequestMapping(value = {"v1/findTfSb"},method= {RequestMethod.GET})
-	public DataTablesOutput<SdTfSb> findTfSb(@Valid DataTablesInput input) {
+	@JsonView({Views.TfEquipStatusToEquipView.class})
+	public List<SdTfSb> findTfSb(){
 		
-		return tfsbService.getAllSdTfSb(input);
+		return tfsbService.getAllTfSb();
+	}
+	
+	@ApiOperation(value="删除通风设备")
+	@RequestMapping(value = {"v1/delTfSb/{id}"},method= {RequestMethod.GET})
+	public void delTfSb(@PathVariable Long id) {
+		tfsbService.delSdTfSb(id);
+	}
+	
+	@ApiOperation(value="查询通风设备通过ID")
+	@RequestMapping(value = {"v1/findSdTfSbById/{id}"},method= {RequestMethod.GET})
+	@JsonView({Views.TfEquipStatusToEquipView.class})
+	public SdTfSb findSdTfSbById (@PathVariable("id") Long id) {
+		return tfsbService.getSdTfSbById(id);
 	}
 	
 }

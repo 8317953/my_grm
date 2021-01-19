@@ -35,6 +35,7 @@ public class ClassUntil {
 	
 	static List<ZiDuan> list=new ArrayList<ZiDuan>();
 	
+	String orginUrl="C:\\Users\\19601\\Desktop";
 	
 	static {
 		getClassName();
@@ -118,27 +119,27 @@ public class ClassUntil {
 	
 	
 	public static void outClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass");
+		File file=new File("C:\\Users\\19601\\Desktop\\outclass");
 		boolean bo=file.exists();
 		if(!bo) {
 			bo=file.mkdir();
 		}
 		if(bo) {
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\model");
+			file=new File("C:\\Users\\19601\\Desktop\\outclass\\model");
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outModelClass();
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\repository");
+			file=new File("C:\\Users\\19601\\Desktop\\outclass\\repository");
 			if(!file.exists()) {
 				file.mkdir();
 			}
 			outRepositoryClass();
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\service");
+			file=new File("C:\\Users\\19601\\Desktop\\outclass\\service");
 			if(!file.exists()) {
 				file.mkdir();
 			}
-			file=new File("C:\\Users\\10231\\Desktop\\outclass\\controller");
+			file=new File("C:\\Users\\19601\\Desktop\\outclass\\controller");
 			if(!file.exists()) {
 				file.mkdir();
 			}
@@ -148,7 +149,7 @@ public class ClassUntil {
 	
 	
 	public static void outRepositoryClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass\\repository\\"+className+"Repository.java");
+		File file=new File("C:\\Users\\19601\\Desktop\\outclass\\repository\\"+className+"Repository.java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
@@ -221,7 +222,7 @@ public class ClassUntil {
 	
 	
 	public static void outModelClass() throws IOException {
-		File file=new File("C:\\Users\\10231\\Desktop\\outclass\\model\\"+className+".java");
+		File file=new File("C:\\Users\\19601\\Desktop\\outclass\\model\\"+className+".java");
 		if(!file.exists()) {
 			file.createNewFile();
 		}
