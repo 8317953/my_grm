@@ -28,7 +28,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 
-@Api(tags="")
+@Api(tags="阀门")
 @RestController
 public class QtFmController {
 	
@@ -36,20 +36,20 @@ public class QtFmController {
 	private QtFmService qtfmService;
 
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "保存阀门")
 	@RequestMapping(value={"/v1/saveqtfm"}, method={RequestMethod.PUT})
 	public void saveQtFm(@RequestBody QtFm qtfm) {
 		qtfmService.saveQtFm(qtfm);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID查询阀门")
 	@RequestMapping(value={"/v1/findqtfmById/{qtfmId}"}, method={RequestMethod.GET})
 	@JsonView({Views.QtFmView.class})
 	public QtFm getQtFmById(@PathVariable("qtfmId") Long qtfmId){
 		return qtfmService.getQtFmById(qtfmId);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID删除阀门")
 	@RequestMapping(value={"/v1/delqtfm/{qtfmId}"}, method={RequestMethod.DELETE})
 	public void DeleteQtFmById(@PathVariable("qtfmId") Long qtfmId){
 		qtfmService.deleteQtFmById(qtfmId);
@@ -58,7 +58,7 @@ public class QtFmController {
 	
 	
 
-	@ApiOperation(value = "")
+	@ApiOperation(value = "查询所有的阀门")
 	@RequestMapping(value={"/v1/getall/qtfm"}, method={RequestMethod.GET})
 	@JsonView({Views.QtFmView.class})
 	public List<QtFm> getAllQtFms(){
