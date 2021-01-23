@@ -58,23 +58,23 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
 		String url=request.getRequestURI();
 		
 		
-		GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
+//		GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
+//		
+//		if(true) {
+//			filterChain.doFilter(gw, response);
+//			return;
+//		}
 		
-		if(true) {
-			filterChain.doFilter(gw, response);
-			return;
-		}
 		
-		
-		if(url.contains("get/data/")) {
-			System.out.println("构建装饰器.....");
-			
-//			GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
-			
-			
-			filterChain.doFilter(gw, response);
-			return;
-		}
+//		if(url.contains("get/data/")) {
+//			System.out.println("构建装饰器.....");
+//			
+////			GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
+//			
+//			
+//			filterChain.doFilter(gw, response);
+//			return;
+//		}
 		
 		
 		if("OPTIONS".equals(request.getMethod())) {
