@@ -5,6 +5,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -22,6 +24,7 @@ import com.haut.grm.model.meta.MyUserDetails;
 import com.haut.grm.model.meta.User;
 import com.haut.grm.repository.meta.UserRepository;
 import com.haut.grm.service.AuthUserService;
+import javax.servlet.http.HttpServletRequestWrapper;
  
 /**
  * @author zhailiang
@@ -34,6 +37,10 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
 	
 	private static Map<String, String> tmap=new HashMap<String, String>();
 
+	
+	private static final String REGEX="columns%5B\\d+%5D";
+	
+	private static final Pattern p = Pattern.compile(REGEX);
 	
 	
 	@Override
@@ -51,10 +58,35 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
 		String url=request.getRequestURI();
 		
 		
+		GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
+		
+		if(true) {
+			filterChain.doFilter(gw, response);
+			return;
+		}
+		
+		
+		if(url.contains("get/data/")) {
+			System.out.println("构建装饰器.....");
+			
+//			GetHttpServletRequestWrapper gw=new GetHttpServletRequestWrapper(request);			
+			
+			
+			filterChain.doFilter(gw, response);
+			return;
+		}
+		
+		
 		if("OPTIONS".equals(request.getMethod())) {
 			System.out.println("OPTIONS.........");
 			response.setStatus(200);
 			response.getWriter().write("111111");
+			return;
+		}
+		
+		
+		if(true) {
+			filterChain.doFilter(request, response);
 			return;
 		}
 		
