@@ -28,7 +28,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 
-@Api(tags="")
+@Api(tags="气体数据")
 @RestController
 public class QtSjController {
 	
@@ -36,20 +36,20 @@ public class QtSjController {
 	private QtSjService qtsjService;
 
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "保存气体数据")
 	@RequestMapping(value={"/v1/saveqtsj"}, method={RequestMethod.PUT})
 	public void saveQtSj(@RequestBody QtSj qtsj) {
 		qtsjService.saveQtSj(qtsj);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID查询气体数据")
 	@RequestMapping(value={"/v1/findqtsjById/{qtsjId}"}, method={RequestMethod.GET})
 	@JsonView({Views.IdView.class})
 	public QtSj getQtSjById(@PathVariable("qtsjId") Long qtsjId){
 		return qtsjService.getQtSjById(qtsjId);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID删除气体数据")
 	@RequestMapping(value={"/v1/delqtsj/{qtsjId}"}, method={RequestMethod.DELETE})
 	public void DeleteQtSjById(@PathVariable("qtsjId") Long qtsjId){
 		qtsjService.deleteQtSjById(qtsjId);
@@ -58,7 +58,7 @@ public class QtSjController {
 	
 	
 
-	@ApiOperation(value = "")
+	@ApiOperation(value = "查询所有的气体数据")
 	@RequestMapping(value={"/v1/getall/qtsj"}, method={RequestMethod.GET})
 	@JsonView({Views.IdView.class})
 	public List<QtSj> getAllQtSjs(){

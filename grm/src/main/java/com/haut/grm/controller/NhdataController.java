@@ -28,7 +28,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 
-@Api(tags="")
+@Api(tags="能耗模块")
 @RestController
 public class NhdataController {
 	
@@ -36,20 +36,20 @@ public class NhdataController {
 	private NhdataService nhdataService;
 
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "保存能耗")
 	@RequestMapping(value={"/v1/savenhdata"}, method={RequestMethod.PUT})
 	public void saveNhdata(@RequestBody Nhdata nhdata) {
 		nhdataService.saveNhdata(nhdata);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID查询能耗信息")
 	@RequestMapping(value={"/v1/findnhdataById/{nhdataId}"}, method={RequestMethod.GET})
 	@JsonView({Views.NhdataView.class})
 	public Nhdata getNhdataById(@PathVariable("nhdataId") Long nhdataId){
 		return nhdataService.getNhdataById(nhdataId);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID删除能耗信息")
 	@RequestMapping(value={"/v1/delnhdata/{nhdataId}"}, method={RequestMethod.DELETE})
 	public void DeleteNhdataById(@PathVariable("nhdataId") Long nhdataId){
 		nhdataService.deleteNhdataById(nhdataId);
@@ -58,7 +58,7 @@ public class NhdataController {
 	
 	
 
-	@ApiOperation(value = "")
+	@ApiOperation(value = "查询所有的能耗信息")
 	@RequestMapping(value={"/v1/getall/nhdata"}, method={RequestMethod.GET})
 	@JsonView({Views.NhdataView.class})
 	public List<Nhdata> getAllNhdatas(){

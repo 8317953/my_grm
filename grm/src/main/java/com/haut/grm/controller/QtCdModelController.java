@@ -28,7 +28,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 
-@Api(tags="")
+@Api(tags="充氮模型")
 @RestController
 public class QtCdModelController {
 	
@@ -36,20 +36,20 @@ public class QtCdModelController {
 	private QtCdModelService qtcdmodelService;
 
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "保存充氮模型")
 	@RequestMapping(value={"/v1/saveqtcdmodel"}, method={RequestMethod.PUT})
 	public void saveQtCdModel(@RequestBody QtCdModel qtcdmodel) {
 		qtcdmodelService.saveQtCdModel(qtcdmodel);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID查询充氮模型")
 	@RequestMapping(value={"/v1/findqtcdmodelById/{qtcdmodelId}"}, method={RequestMethod.GET})
 	@JsonView({Views.QtCdModelView.class})
 	public QtCdModel getQtCdModelById(@PathVariable("qtcdmodelId") Long qtcdmodelId){
 		return qtcdmodelService.getQtCdModelById(qtcdmodelId);
 	}
 	
-	@ApiOperation(value = "")
+	@ApiOperation(value = "通过ID删除充氮模型")
 	@RequestMapping(value={"/v1/delqtcdmodel/{qtcdmodelId}"}, method={RequestMethod.DELETE})
 	public void DeleteQtCdModelById(@PathVariable("qtcdmodelId") Long qtcdmodelId){
 		qtcdmodelService.deleteQtCdModelById(qtcdmodelId);
@@ -58,7 +58,7 @@ public class QtCdModelController {
 	
 	
 
-	@ApiOperation(value = "")
+	@ApiOperation(value = "查询所有的充氮模型")
 	@RequestMapping(value={"/v1/getall/qtcdmodel"}, method={RequestMethod.GET})
 	@JsonView({Views.QtCdModelView.class})
 	public List<QtCdModel> getAllQtCdModels(){
