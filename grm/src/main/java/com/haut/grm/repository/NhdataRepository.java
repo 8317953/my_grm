@@ -21,5 +21,19 @@ import com.haut.grm.repository.base.BaseEntityRepository;
 public interface NhdataRepository extends BaseEntityRepository<Nhdata,Long>, QueryDslPredicateExecutor<Nhdata>, QuerydslBinderCustomizer<QNhdata> {
     default void customize(QuerydslBindings bindings, QNhdata obj) { /* compiled code */ }
 
+    //codeid*Integer,
+    
+    Nhdata findByCodeid(Integer codeid);
      
+    //code*String,s
+    
+    List<Nhdata> findByCodeLike(String code);
+     
+    
+    List<Nhdata> findByCode(String code);
+     
+
+    //end
+
+
 }

@@ -74,6 +74,31 @@ public class NhdataController {
 
 	}
 	
+    //codeid*Integer,
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/findnhdataBycodeid/{codeid}"}, method={RequestMethod.GET})
+	@JsonView({Views.NhdataView.class})
+	public Nhdata getNhdataByCodeid(@PathVariable("codeid") Integer codeid){
+		return nhdataService.getNhdataByCodeid(codeid);
+	}
+	
+    //code*String,s
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/findnhdataBycode/{code}"}, method={RequestMethod.GET})
+	@JsonView({Views.NhdataView.class})
+	public List<Nhdata> getNhdataByCode(@PathVariable("code") String code){
+		return nhdataService.getNhdataByCode(code);
+	}
+	
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/getnhdata/likecode/{code}"}, method={RequestMethod.GET})
+	@JsonView({Views.NhdataView.class})
+	public List<Nhdata> getNhdataByLikeCode(@PathVariable("code") String code){
+		return nhdataService.getNhdataByLikeCode(code);
+	}
+    //end
+
+	
 
 	
 }

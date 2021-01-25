@@ -55,4 +55,20 @@ public class NhdataService
 		nhdataRepo.delete(nhdataId);
 	}
 	
+    //codeid*Integer,
+	public Nhdata getNhdataByCodeid(Integer codeid) {
+		return nhdataRepo.findByCodeid(codeid);
+	}
+	
+    //code*String,s
+	public List<Nhdata> getNhdataByCode(String code) {
+		return nhdataRepo.findByCode(code);
+	}
+	
+	
+	public List<Nhdata> getNhdataByLikeCode(String code) {
+		return nhdataRepo.findByCodeLike("%"+code+"%");
+	}
+    //end
+
 }
