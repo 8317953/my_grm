@@ -40,6 +40,8 @@ public class QSdTfPlane extends EntityPathBase<SdTfPlane> {
 
     public final com.haut.grm.model.meta.QUser manager;
 
+    public final StringPath name = createString("name");
+
     public final com.haut.grm.model.type.QPlaneProcessType processType;
 
     public final SetPath<SdTfEquipStatus, QSdTfEquipStatus> sdTfEquipStatuses = this.<SdTfEquipStatus, QSdTfEquipStatus>createSet("sdTfEquipStatuses", SdTfEquipStatus.class, QSdTfEquipStatus.class, PathInits.DIRECT2);

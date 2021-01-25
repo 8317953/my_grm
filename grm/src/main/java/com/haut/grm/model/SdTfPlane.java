@@ -115,6 +115,19 @@ public class SdTfPlane  extends AbstractEntity<Long>{
 	private Set<SdTfEquipStatus> sdTfEquipStatuses;
 	
 	
+	@JsonView(Views.IdView.class)
+	@Column(name = "name")
+	private String name;
+	
+	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public Set<SdTfEquipStatus> getSdTfEquipStatuses() {
 		return sdTfEquipStatuses;
