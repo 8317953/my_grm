@@ -60,7 +60,7 @@ public class QtSjController {
 
 	@ApiOperation(value = "查询所有的气体数据")
 	@RequestMapping(value={"/v1/getall/qtsj"}, method={RequestMethod.GET})
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtSjView.class})
 	public List<QtSj> getAllQtSjs(){
 		return qtsjService.getAllQtSjs();
 
@@ -68,12 +68,48 @@ public class QtSjController {
 	
 	
 	@RequestMapping(value={"/get/data/all/qtsj"}, method={RequestMethod.GET})
-	@JsonView({Views.IdView.class})
+	@JsonView({Views.QtSjDatableView.class})
 	public DataTablesOutput<QtSj> getAllDataQtSjs(@Valid DataTablesInput input){
 		return qtsjService.getAllQtSjTable(input);
 
 	}
 	
+
+    //store.id*Long,
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/findqtsjBystore_id/{store_id}"}, method={RequestMethod.GET})
+	@JsonView({Views.QtSjView.class})
+	public QtSj getQtSjByStore_Id(@PathVariable("store_id") Long store_id){
+		return qtsjService.getQtSjByStore_Id(store_id);
+	}
+	
+
+    //code*String,
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/findqtsjBycode/{code}"}, method={RequestMethod.GET})
+	@JsonView({Views.QtSjView.class})
+	public QtSj getQtSjByCode(@PathVariable("code") String code){
+		return qtsjService.getQtSjByCode(code);
+	}
+	
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/getqtsj/likecode/{code}"}, method={RequestMethod.GET})
+	@JsonView({Views.QtSjView.class})
+	public List<QtSj> getQtSjByLikeCode(@PathVariable("code") String code){
+		return qtsjService.getQtSjByLikeCode(code);
+	}    //codeId*Integer,
+	@ApiOperation(value = "")
+	@RequestMapping(value={"/v1/findqtsjBycodeid/{codeid}"}, method={RequestMethod.GET})
+	@JsonView({Views.QtSjView.class})
+	public QtSj getQtSjByCodeId(@PathVariable("codeid") Integer codeid){
+		return qtsjService.getQtSjByCodeId(codeid);
+	}
+	
+
+    //end
+
+
+
 
 	
 }

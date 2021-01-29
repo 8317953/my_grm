@@ -87,6 +87,15 @@ public class SdTfController {
 		return tfService.getSdTfPlaneById(tfplId);
 	}
 	
+	@ApiOperation(value="通过Store_id查询出通风计划")
+	@RequestMapping(value={"/v1/ventilatePlanByStoreId/{store_id}"}, method={RequestMethod.GET})
+	@JsonView({Views.SdTfPlaneView.class})
+	public List<SdTfPlane> ventilatePlan(@PathVariable("store_id") Long store_id){
+		System.out.println(store_id);
+		
+		return tfService.getAllTfPlansBy_storeId(store_id);
+	}
+
 	@ApiOperation(value = "通过Id删除通风计划")
 	@RequestMapping(value={"/v1/delPlan/{tfplId}"}, method={RequestMethod.DELETE})
 	public void DeleteTfPlaneById(@PathVariable("tfplId") Long tfplId){

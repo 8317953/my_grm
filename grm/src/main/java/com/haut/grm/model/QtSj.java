@@ -22,6 +22,11 @@ public class QtSj  extends AbstractEntity<Long>{
 	 * 
 	 */
 	private static final long serialVersionUID = -3493020479134797011L;
+	
+	@ManyToOne
+	@JoinColumn(name="store_id")
+	@JsonView({Views.QtSjView.class})
+	private Store store;
 
 	@Column(name="code")
 	@JsonView({Views.IdView.class})
@@ -71,6 +76,14 @@ public class QtSj  extends AbstractEntity<Long>{
 	@Column(name="n2")
 	@JsonView({Views.IdView.class})
 	private String n2;
+	
+	public Store getStore() {
+		return store;
+	}
+
+	public void setStore(Store store) {
+		this.store = store;
+	}
 
 	public String getCode() {
 		return code;

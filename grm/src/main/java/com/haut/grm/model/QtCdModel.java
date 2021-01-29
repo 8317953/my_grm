@@ -23,11 +23,11 @@ public class QtCdModel  extends AbstractEntity<Long>{
 	private static final long serialVersionUID = -5711750980159656607L;
 
 	@Column(name = "code_id")
-	@JsonView(Views.SdTfPlaneView.class)
+	@JsonView({Views.IdView.class})
 	private Integer codeid;
 	
 	@Column(name = "code")
-	@JsonView(Views.SdTfPlaneView.class)
+	@JsonView({Views.IdView.class})
 	private String code;
 	
 	

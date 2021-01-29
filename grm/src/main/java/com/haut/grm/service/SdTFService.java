@@ -65,6 +65,11 @@ public class SdTFService
 		
 	}
 	
+	public List<SdTfPlane> getAllTfPlansBy_storeId(Long store_id){
+		
+		return sdtfplaneRepo.findByStore_Id(store_id);
+	}
+	
 	
 	public DataTablesOutput<SdTfPlane> getAllSdTfPlaneTable(DataTablesInput input,Long depotId){
 		QSdTfPlane qed=QSdTfPlane.sdTfPlane;

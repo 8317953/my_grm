@@ -38,6 +38,8 @@ public class QQtFm extends EntityPathBase<QtFm> {
 
     public final NumberPath<Integer> port = createNumber("port", Integer.class);
 
+    public final NumberPath<Integer> status = createNumber("status", Integer.class);
+
     public final QStore store;
 
     public QQtFm(String variable) {

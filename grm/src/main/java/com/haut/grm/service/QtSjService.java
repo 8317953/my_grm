@@ -54,5 +54,33 @@ public class QtSjService
 	public void deleteQtSjById(Long qtsjId) {
 		qtsjRepo.delete(qtsjId);
 	}
+
+
+
+
+    //store.id*Long,
+	public QtSj getQtSjByStore_Id(Long store_id) {
+		return qtsjRepo.findByStore_Id(store_id);
+	}
 	
+
+    //code*String,
+	public QtSj getQtSjByCode(String code) {
+		return qtsjRepo.findByCode(code);
+	}
+	
+	
+	public List<QtSj> getQtSjByLikeCode(String code) {
+		return qtsjRepo.findByCodeLike("%"+code+"%");
+	}    //codeId*Integer,
+	public QtSj getQtSjByCodeId(Integer codeid) {
+		return qtsjRepo.findByCodeId(codeid);
+	}
+	
+
+    //end
+
+
+
+
 }

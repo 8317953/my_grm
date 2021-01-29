@@ -50,6 +50,8 @@ public class QQtSj extends EntityPathBase<QtSj> {
 
     public final StringPath so2f2 = createString("so2f2");
 
+    public final QStore store;
+
     public QQtSj(String variable) {
         this(QtSj.class, forVariable(variable), INITS);
     }
@@ -69,6 +71,7 @@ public class QQtSj extends EntityPathBase<QtSj> {
     public QQtSj(Class<? extends QtSj> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
         this.inputer = inits.isInitialized("inputer") ? new com.haut.grm.model.meta.QUser(forProperty("inputer"), inits.get("inputer")) : null;
+        this.store = inits.isInitialized("store") ? new QStore(forProperty("store"), inits.get("store")) : null;
     }
 
 }

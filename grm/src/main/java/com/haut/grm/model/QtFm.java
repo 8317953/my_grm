@@ -50,6 +50,18 @@ public class QtFm  extends AbstractEntity<Long>{
 	@Column(name="com")
 	@JsonView({Views.IdView.class})
 	private String com;
+	
+	@Column(name="status")
+	@JsonView({Views.IdView.class})
+	private Integer status;
+	
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
 
 	public Integer getCodeid() {
 		return codeid;

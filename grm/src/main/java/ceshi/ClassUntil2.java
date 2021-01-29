@@ -44,14 +44,14 @@ public class ClassUntil2 {
 	
 //	static String[] attributes=null;
 	
-	static String[] attributes=new String[] {"codeid*Integer,","code*String,s"};
+	static String[] attributes=new String[] {"code*String,","codeId*Integer,"};
 	
 	
 	
 //	static String tablename="nh_data";
 	static String tablename=null;
 	
-	static String className="Nhdata";
+	static String className="QtSj";
 //	static String className=null;
 	
 	static String objName=null;
@@ -801,7 +801,8 @@ public class ClassUntil2 {
 			
 			String attController="";
 			if(str.contains(".")) {
-				String[] strs=str.split(".");
+//				System.out.println("com----------");
+				String[] strs=str.split("\\.");
 				String str1F=(strs[0].charAt(0)+"").toUpperCase();
 				
 				String str1=strs[0].substring(1, strs[0].length());
@@ -810,7 +811,7 @@ public class ClassUntil2 {
 				String str2=strs[1].substring(1, strs[1].length());
 				str2=str2F+str2;
 				att=str1+"_"+str2;
-				
+//				System.out.println(att);
 			}else {
 				String strF=(str.charAt(0)+"").toUpperCase();
 				
@@ -978,6 +979,9 @@ public class ClassUntil2 {
 			
 			
 		}
+//		if(true) {
+//			return;
+//		}
 		
 		String end=
 				"\r\n"+

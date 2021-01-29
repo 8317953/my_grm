@@ -39,6 +39,8 @@ public class QtcdjlController {
 	@ApiOperation(value = "保存气体充氮记录")
 	@RequestMapping(value={"/v1/saveqtcdjl"}, method={RequestMethod.PUT})
 	public void saveQtcdjl(@RequestBody Qtcdjl qtcdjl) {
+		Date d=new Date();
+		qtcdjl.setInputtime(d);
 		qtcdjlService.saveQtcdjl(qtcdjl);
 	}
 	
