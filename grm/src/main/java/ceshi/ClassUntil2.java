@@ -44,21 +44,21 @@ public class ClassUntil2 {
 	
 //	static String[] attributes=null;
 	
-	static String[] attributes=new String[] {"code*String,","codeId*Integer,"};
+	static String[] attributes=new String[] {"store.id*Long,s"};
 	
 	
 	
-//	static String tablename="nh_data";
-	static String tablename=null;
+	static String tablename="qt_fm_model";
+	//static String tablename=null;
 	
-	static String className="QtSj";
-//	static String className=null;
+	static String className="QtCdModel";
+//    static String className=null;
 	
 	static String objName=null;
 	
 	static List<ZiDuan> list=new ArrayList<ZiDuan>();
 	
-	public static String desUrl="C:\\Users\\10231\\Desktop\\";
+	public static String desUrl="C:\\Users\\19601\\Desktop\\";
 	
 	static {
 		getClassName();
@@ -1003,6 +1003,7 @@ public class ClassUntil2 {
 	
 	public static void main(String[] args) throws IOException {
 		writeSearch();
+//		outClass();
 	}
 	
 	

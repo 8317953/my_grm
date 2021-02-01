@@ -20,9 +20,9 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.haut.grm.json.view.Views;
 
 import com.haut.grm.model.QtCdModel;
-
+import com.haut.grm.model.Qtfmmodel;
 import com.haut.grm.service.QtCdModelService;
-
+import com.haut.grm.service.QtfmmodelService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -35,16 +35,28 @@ public class QtCdModelController {
 	@Autowired
 	private QtCdModelService qtcdmodelService;
 
+	@Autowired
+	private QtfmmodelService qtfmmodelService;
 	
 	@ApiOperation(value = "保存充氮模型")
 	@RequestMapping(value={"/v1/saveqtcdmodel"}, method={RequestMethod.PUT})
 	public void saveQtCdModel(@RequestBody QtCdModel qtcdmodel) {
-		qtcdmodelService.saveQtCdModel(qtcdmodel);
+		QtCdModel qcm=qtcdmodelService.saveQtCdModel(qtcdmodel);
+		
+		Set<Qtfmmodel> sets=qtcdmodel.getQtfmmodels();
+		
+		for(Qtfmmodel qm:sets) {
+			System.out.println(qm.getCdfmid()+","+qm.getStatus());
+			qm.setCdmodelid(qcm);
+			qtfmmodelService.saveQtfmmodel(qm);
+		}
+		
+		
 	}
 	
 	@ApiOperation(value = "通过ID查询充氮模型")
 	@RequestMapping(value={"/v1/findqtcdmodelById/{qtcdmodelId}"}, method={RequestMethod.GET})
-	@JsonView({Views.QtCdModelView.class})
+	@JsonView({Views.QtCdModelFm.class})
 	public QtCdModel getQtCdModelById(@PathVariable("qtcdmodelId") Long qtcdmodelId){
 		return qtcdmodelService.getQtCdModelById(qtcdmodelId);
 	}
@@ -52,6 +64,17 @@ public class QtCdModelController {
 	@ApiOperation(value = "通过ID删除充氮模型")
 	@RequestMapping(value={"/v1/delqtcdmodel/{qtcdmodelId}"}, method={RequestMethod.DELETE})
 	public void DeleteQtCdModelById(@PathVariable("qtcdmodelId") Long qtcdmodelId){
+		
+		QtCdModel qtCdModelById = qtcdmodelService.getQtCdModelById(qtcdmodelId);
+		
+		Set<Qtfmmodel> qtfmmodels = qtCdModelById.getQtfmmodels();
+		
+		for(Qtfmmodel qm:qtfmmodels) {
+			System.out.println(qm.getId()+"-----");
+			qtfmmodelService.deleteQtfmmodelById(qm.getId());
+		}
+		
+		
 		qtcdmodelService.deleteQtCdModelById(qtcdmodelId);
 	}
 	
@@ -60,7 +83,7 @@ public class QtCdModelController {
 
 	@ApiOperation(value = "查询所有的充氮模型")
 	@RequestMapping(value={"/v1/getall/qtcdmodel"}, method={RequestMethod.GET})
-	@JsonView({Views.QtCdModelView.class})
+	@JsonView({Views.QtCdModelFm.class})
 	public List<QtCdModel> getAllQtCdModels(){
 		return qtcdmodelService.getAllQtCdModels();
 
@@ -73,7 +96,16 @@ public class QtCdModelController {
 		return qtcdmodelService.getAllQtCdModelTable(input);
 
 	}
-	
+    //store.id*Long,s
+	@ApiOperation(value = "通过StoreID查询充氮阀门数据")
+	@RequestMapping(value={"/v1/findqtcdmodelBystore_id/{store_id}"}, method={RequestMethod.GET})
+	@JsonView({Views.QtCdModelFm.class})
+	public List<QtCdModel> getQtCdModelByStore_Id(@PathVariable("store_id") Long store_id){
+		return qtcdmodelService.getQtCdModelByStore_Id(store_id);
+	}
 
+    //end
+
+	
 	
 }

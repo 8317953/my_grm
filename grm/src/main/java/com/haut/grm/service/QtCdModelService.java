@@ -54,5 +54,12 @@ public class QtCdModelService
 	public void deleteQtCdModelById(Long qtcdmodelId) {
 		qtcdmodelRepo.delete(qtcdmodelId);
 	}
+    //store.id*Long,s
+	public List<QtCdModel> getQtCdModelByStore_Id(Long store_id) {
+		return qtcdmodelRepo.findByStore_Id(store_id);
+	}
 	
+
+    //end
+
 }

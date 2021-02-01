@@ -11,21 +11,16 @@ import org.springframework.data.querydsl.binding.QuerydslBindings;
 
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.haut.grm.model.QQtCdModel;
-import com.haut.grm.model.QtCdModel;
+import com.haut.grm.model.QQtfmmodel;
+import com.haut.grm.model.Qtfmmodel;
 import com.haut.grm.repository.base.BaseEntityRepository;
 
 
 
 @RepositoryRestResource
-public interface QtCdModelRepository extends BaseEntityRepository<QtCdModel,Long>, QueryDslPredicateExecutor<QtCdModel>, QuerydslBinderCustomizer<QQtCdModel> {
-    default void customize(QuerydslBindings bindings, QQtCdModel obj) { /* compiled code */ }
+public interface QtfmmodelRepository extends BaseEntityRepository<Qtfmmodel,Long>, QueryDslPredicateExecutor<Qtfmmodel>, QuerydslBinderCustomizer<QQtfmmodel> {
+    default void customize(QuerydslBindings bindings, QQtfmmodel obj) { /* compiled code */ }
 
-    //store.id*Long,s
-    
-    List<QtCdModel> findByStore_Id(Long store_id);
      
-
     //end
-
 }
